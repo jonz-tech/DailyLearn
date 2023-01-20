@@ -15,6 +15,15 @@
 
 /* Begin PBXFileReference section */
 		5FB23B6C2978D16E0057D872 /* 19_类型角色TypeCasting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "19_类型角色TypeCasting.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B6D297915FA0057D872 /* 20_嵌套类型NestedTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20_嵌套类型NestedTypes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B6E297945EF0057D872 /* 20_拓展Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20_拓展Extensions.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B6F297946120057D872 /* 21_协议Protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21_协议Protocol.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B70297946530057D872 /* 22_泛型Genuerics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "22_泛型Genuerics.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B712979468A0057D872 /* 23_不透明类型OpaqueTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "23_不透明类型OpaqueTypes.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B72297946AF0057D872 /* 24_引用计数器ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "24_引用计数器ARC.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B74297947160057D872 /* 25_内存安全MemorySafety.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "25_内存安全MemorySafety.playground"; sourceTree = "<group>"; };
+		5FB23B75297947530057D872 /* 26_访问控制AccessControl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "26_访问控制AccessControl.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5FB23B76297947710057D872 /* 27_高级操作AdvancedOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "27_高级操作AdvancedOperators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B72F9F6E2925EA4C00AF6E36 /* 06_方法functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "06_方法functions.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B72F9F762927E08600AF6E36 /* 07_闭包Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "07_闭包Closures.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B72F9F77292957C300AF6E36 /* 08_枚举Enumerations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "08_枚举Enumerations.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -92,6 +101,15 @@
 		B7B5281128850275009264F3 /* LanguageGuide */ = {
 			isa = PBXGroup;
 			children = (
+				5FB23B76297947710057D872 /* 27_高级操作AdvancedOperators.playground */,
+				5FB23B75297947530057D872 /* 26_访问控制AccessControl.playground */,
+				5FB23B74297947160057D872 /* 25_内存安全MemorySafety.playground */,
+				5FB23B72297946AF0057D872 /* 24_引用计数器ARC.playground */,
+				5FB23B712979468A0057D872 /* 23_不透明类型OpaqueTypes.playground */,
+				5FB23B70297946530057D872 /* 22_泛型Genuerics.playground */,
+				5FB23B6F297946120057D872 /* 21_协议Protocol.playground */,
+				5FB23B6E297945EF0057D872 /* 20_拓展Extensions.playground */,
+				5FB23B6D297915FA0057D872 /* 20_嵌套类型NestedTypes.playground */,
 				5FB23B6C2978D16E0057D872 /* 19_类型角色TypeCasting.playground */,
 				B73B0A342948E720005953B4 /* 18_并发Concurrency.playground */,
 				B73B0A332948D280005953B4 /* 17_错误处理.playground */,
