@@ -108,6 +108,7 @@ let defaultRect = Rect()
 let memberwiseRect = Rect(origin: Point(x: 2.0, y: 2.0),
    size: Size(width: 5.0, height: 5.0))
 
+//结构体增加构造函数
 extension Rect {
     init(center: Point, size: Size) {
         let originX = center.x - (size.width / 2)
@@ -122,11 +123,91 @@ let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
 
 
 // ## 方法
+// 拓展可以增加实例方法、也可以给已存在类型增加类型方法。
 
+// 给Int类型增加repetitions方法
+extension Int {
+    func repetitions(task: () -> Void) {
+        for _ in 0..<self {
+            task()
+        }
+    }
+}
+
+3.repetitions {
+    print("Hello!")
+}
+// Hello!
+// Hello!
+// Hello!
+
+// 通过拓展增加的可变实例方法，甚至可以改变实例自身。
+// 需要改变结构和枚举实例自身、属性的可变实例方法，都需要给加上关键字 mutating。
+
+extension Int {
+    mutating func square() {
+        self = self * self
+    }
+}
+var someInt = 3
+someInt.square()
+// someInt is now 9
 
 
 // ##下标
 
+// 拓展也可以给类型增加下标
 
+// 从右往左读下标，如果下标大于原有大小，则返回0
+extension Int {
+    subscript(digitIndex: Int) -> Int {
+        var decimalBase = 1
+        for _ in 0..<digitIndex {
+            decimalBase *= 10
+        }
+        return (self / decimalBase) % 10
+    }
+}
+
+746381295[0] // returns 5
+746381295[1] // returns 9
+746381295[2] // returns 2
+746381295[8] // returns 7
+0746381295[9] // returns 0, as if you had requested:
 
 // ## 嵌套类型
+// 可以通过拓展给类、结构、枚举增加嵌套类型。
+extension Int {
+    // 嵌入一个Kind的枚举类型
+    enum Kind {
+        case negative, zero, positive
+    }
+    // 增加一个kind属性
+    var kind: Kind {
+        switch self {
+        case 0:
+            return .zero
+        case let x where x > 0:
+            return .positive
+        default:
+            return .negative
+        }
+    }
+}
+
+func printIntegerKinds(_ numbers: [Int]) {
+    for number in numbers {
+        switch number.kind {
+            case .negative:
+                print("- ", terminator: "")
+            case .zero:
+                print("0 ", terminator: "")
+            case .positive:
+                print("+ ", terminator: "")
+        }
+    }
+    print("")
+}
+// 打印数组内的数字是正数、0、负数
+printIntegerKinds([3, 19, -27, 0, -6, 0, 7]) // Prints "+ + - 0 - 0 + "
+
