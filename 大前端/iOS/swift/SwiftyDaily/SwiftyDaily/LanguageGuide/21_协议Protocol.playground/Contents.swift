@@ -173,17 +173,224 @@ class SomeSubClass: SomeSuperClass1, SomeProtocol1 {
 
 
 
-// ## 协议作为类型
+// ## 协议类型
+// 协议本身并不具备任何功能，但你可以把它当作一个完整能力的类型来表示。
+// 协议类型，又被叫做“存在类型”，原因是它表示：存在一个类型,该类型遵循了协议T
+// 其他非协议类型使用的场景，协议也可以作为类型使用：
+//  1. 在方法、函数、构造器中作为参数类型或者返回类型。
+//  2. 作为一个常量类型、变量类型或者属性类型。
+//  3. 在数组、字典或者其他容器内作为类型项
 
+// PS: 由于协议上一个类型，因此协议名称开头要用大写字母。
+// 骰子类
+class Dice {
+    let sides: Int
+    let generator: RandomNumberGenerator
+    init(sides: Int, generator: RandomNumberGenerator) {
+        self.sides = sides
+        self.generator = generator
+    }
+    // 模拟扔骰子的过程
+    func roll() -> Int {
+        return Int(generator.random() * Double(sides)) + 1
+    }
+}
+
+var d6 = Dice(sides: 6, generator: LinearCongruentialGenerator())
+for _ in 1...5 {
+    print("Random dice roll is \(d6.roll())")
+}
+// Random dice roll is 3
+// Random dice roll is 5
+// Random dice roll is 4
+// Random dice roll is 5
+// Random dice roll is 4
 
 // ## 代理
+// 代理上一个设计模式，它允许类或者实例对象将他们需要的一些功能，委托给其他类型的实例对象来提供。
+// 这个设计模式的实现是：定义协议来封装那些需要被委托的功能，这样就能确保遵循协议的类型能提供这些功能。
+// 委托模式可以用来响应特定的动作，或者接收外部数据源提供的数据，而无需关心外部数据源的类型。
+// 为了防止强引用导致的循环引用，代理类型都要用弱引用类型表示。
+
+// 骰子游戏协议
+protocol DiceGame {
+    var dice: Dice { get }
+    func play()
+}
+// 骰子游戏代理协议
+protocol DiceGameDelegate: AnyObject { //继承了AnyObject表示它是一个类类型。
+    func gameDidStart(_ game: DiceGame)
+    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)
+    func gameDidEnd(_ game: DiceGame)
+}
+
+// 蛇梯游戏协议实现类
+class SnakesAndLadders: DiceGame {
+    let finalSquare = 25
+    let dice = Dice(sides: 6, generator: LinearCongruentialGenerator())
+    var square = 0
+    var board: [Int]
+    
+    // 弱引用可选代理类型，由于是可选类型，默认值为nil
+    // 协议代理类型，同时也是一个仅类类型，所以它可以用弱引用表示
+    weak var delegate: DiceGameDelegate?
+    
+    init() {
+        board = Array(repeating: 0, count: finalSquare + 1)
+        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+    }
+    
+    func play() {
+        square = 0
+        delegate?.gameDidStart(self) //使用可选类型的链式访问DiceGameDelegate的方法
+        gameLoop: while square != finalSquare {
+            let diceRoll = dice.roll()
+            delegate?.game(self, didStartNewTurnWithDiceRoll: diceRoll)
+            switch square + diceRoll {
+            case finalSquare:
+                break gameLoop
+            case let newSquare where newSquare > finalSquare:
+                continue gameLoop
+            default:
+                square += diceRoll
+                square += board[square]
+            }
+        }
+        delegate?.gameDidEnd(self)
+    }
+}
+// 骰子游戏代理DiceGameDelegate协议实现类
+class DiceGameTracker: DiceGameDelegate {
+    var numberOfTurns = 0
+    func gameDidStart(_ game: DiceGame) {
+        numberOfTurns = 0
+        if game is SnakesAndLadders {
+            print("Started a new game of Snakes and Ladders")
+        }
+        print("The game is using a \(game.dice.sides)-sided dice")
+    }
+    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int) {
+        numberOfTurns += 1
+        print("Rolled a \(diceRoll)")
+    }
+    func gameDidEnd(_ game: DiceGame) {
+        print("The game lasted for \(numberOfTurns) turns")
+    }
+}
+
+let tracker = DiceGameTracker()
+let game = SnakesAndLadders()
+game.delegate = tracker
+game.play()
+// Started a new game of Snakes and Ladders
+// The game is using a 6-sided dice
+// Rolled a 3
+// Rolled a 5
+// Rolled a 4
+// Rolled a 5
+// The game lasted for 4 turns
 
 
 // ## 拓展增加协议遵循
+// 对于一个已存在的类型，尽管你没有源码权限，你依然可以为类型拓展遵循某个协议，进而增加类型的一些能力。
+// 拓展可以和协议一样，为已存在类型增加属性、方法和下标等能力。因此我们可以让拓展直接继承某个协议。
+
+// PS: 对于已存在的实例类型，如果后续为这个类型增加拓展协议，那么这个实例依然可以使用拓展协议提供的能力。
+
+protocol TextRepresentable {
+    var textualDescription: String { get }
+}
+
+let d12 = Dice(sides: 12, generator: LinearCongruentialGenerator())
+
+extension Dice: TextRepresentable {
+    var textualDescription: String {
+        return "A \(sides)-sided dice"
+    }
+}
+
+print(d12.textualDescription)
 
 
-// ## 同步实现遵循协议
+extension SnakesAndLadders: TextRepresentable {
+    var textualDescription: String {
+        return "A game of Snakes and Ladders with \(finalSquare) squares"
+    }
+}
+print(game.textualDescription)
 
+//### 有条件的遵循协议
+// 在一些明确的条件情况下，泛型可能可以满足某些协议要求的一些能力。例如类型的某个通用参数都遵循了协议T
+// 你可以在拓展一个类型能力时，定义一个泛型。让它可以根据需要循序不同的协议。
+
+// 拓展了数组需要遵循协议TextRepresentable，并且它的元素也要遵循TextRepresentable类型
+extension Array: TextRepresentable where Element: TextRepresentable {
+    var textualDescription: String {
+        let itemsAsText = self.map { $0.textualDescription }
+        return "[" + itemsAsText.joined(separator: ", ") + "]"
+    }
+}
+
+var myDice = [d6, d12]
+print(myDice.textualDescription) // Prints "[A 6-sided dice, A 12-sided dice]"
+//myDice.append(1) //添加非遵循的类型，这里会编译报错。
+
+// ### 拓展类型声明遵循某个协议
+struct Hamster {
+    var name: String
+    var textualDescription: String {
+        return "A hamster named \(name)"
+    }
+}
+extension Hamster: TextRepresentable {}
+
+let simonTheHamster = Hamster(name: "Simon")
+let somethingTextRepresentable: TextRepresentable = simonTheHamster
+print(somethingTextRepresentable.textualDescription)
+
+// PS：类型不自动遵循一个协议，所以类型要遵循某些协议，都需要显式的声明。
+
+// ## 采用合成实现对象来遵循某个协议
+// Swift提供了许多合成实现类型，例如Equatable（相等）、Hashable（哈希）和Comparable（对比）。
+// 直接使用这些合成实现类型，意味着你无需重复写这些实现功能。
+// Equatable：自定义类型使用Equatable合成类型，可使用场景：
+//    * 结构体中的存储属性，可以遵循Equatable合成实现。
+//    * 枚举关联类型遵循使用了Equatable合成实现。
+//    * 枚举中无关联类型的。
+
+//为了让Vector3D能够使用 == 比较方法，将Vector3D声明为遵循Equatable
+struct Vector3D: Equatable {
+    var x = 0.0, y = 0.0, z = 0.0
+}
+
+let twoThreeFour = Vector3D(x: 2.0, y: 3.0, z: 4.0)
+let anotherTwoThreeFour = Vector3D(x: 2.0, y: 3.0, z: 4.0)
+if twoThreeFour == anotherTwoThreeFour { //直接通过 == 来比较。
+    print("These two vectors are also equivalent.")
+}
+// Hashable:自定义类型遵循Hashable合成实现，使用场景：
+//  * 结构体中的存储属性，声明遵循Hashable合成实现。
+//  * 枚举关联类型，声明遵循Hashable合成实现。
+//  * 枚举无关联类型的
+
+// Comparable： 自定义类型遵循Comparable合成实现，使用场景：
+//  * 如果枚举类型有关联类型，那么它必须遵循Comparable协议。
+//  * 声明遵循Comparable合成类型的类型，可以得到 < 操作符的合成实现，且无需自己编写任何关于 < 的实现代码。Comparable 协议同时包含 <=、> 和 >= 操作符的默认实现
+enum SkillLevel: Comparable {
+    case beginner
+    case intermediate
+    case expert(stars: Int)
+}
+var levels = [SkillLevel.intermediate, SkillLevel.beginner,
+              SkillLevel.expert(stars: 5), SkillLevel.expert(stars: 3)]
+for level in levels.sorted() {
+    print(level)
+}
+// 打印 "beginner"
+// 打印 "intermediate"
+// 打印 "expert(stars: 3)"
+// 打印 "expert(stars: 5)"
 
 // ## 协议类型集合
 
