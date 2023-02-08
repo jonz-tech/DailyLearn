@@ -392,23 +392,274 @@ for level in levels.sorted() {
 // 打印 "expert(stars: 3)"
 // 打印 "expert(stars: 5)"
 
-// ## 协议类型集合
-
+// ## 集合中的协议类型
+// 协议类型可以被存储到数组、字典等集合中。
+let things: [TextRepresentable] = [game, d12, simonTheHamster]
+for thing in things {
+    print(thing.textualDescription)
+}
+// A game of Snakes and Ladders with 25 squares
+// A 12-sided dice
+// A hamster named Simon
 
 // ## 协议继承
+// 一个协议可以继承一个到多个协议，并且可以在继承协议的基础上，进一步添加需求。
+//协议基础语法和类的基础一样，同时继承多个协议用逗号分隔。
+protocol InheritingProtocol: SomeProtocol, AnotherProtocol {
+    // protocol definition goes here
+}
+
+protocol PrettyTextRepresentable: TextRepresentable {
+    var prettyTextualDescription: String { get }
+}
+
+// SnakesAndLadders 拓展协议
+extension SnakesAndLadders: PrettyTextRepresentable {
+    var prettyTextualDescription: String {
+        var output = textualDescription + ":\n"
+        for index in 1...finalSquare {
+            switch board[index] {
+            case let ladder where ladder > 0:
+                output += "▲ "
+            case let snake where snake < 0:
+                output += "▼ "
+            default:
+                output += "○ "
+            }
+        }
+        return output
+    }
+}
+
+print(game.prettyTextualDescription)
+// A game of Snakes and Ladders with 25 squares:
+// ○ ○ ▲ ○ ○ ▲ ○ ○ ▲ ▲ ○ ○ ○ ▼ ○ ○ ○ ○ ▼ ○ ○ ▼ ○ ▼ ○
 
 
 // ## 类专属协议
+// 如果协议只想给类使用，那么可以定义协议继承自AnyObject，此时枚举和结构等类型不可使用该协议。
+protocol SomeClassOnlyProtocol: AnyObject, InheritingProtocol {
+    // class-only protocol definition goes here
+}
+//PS: 对于引用类型要继承的协议，应该使用类专属协议。
+
+// ## 复合协议
+// 一个类型同时基础多个协议是非常有用的，但有时候我们不想多定义一个类型，又可以临时表示某个协议组，我们可以使用复合协议来表示。
+// 复合协议表示： 协议A & 协议B & ... ， 它并不表示一个新的类型，而是表示“ 任何同时遵循A & B协议的类型”，它不关心参数的具体类型，只要参数遵循这两个协议即可。
+
+protocol Named {
+    var name: String { get }
+}
+
+protocol Aged {
+    var age: Int { get }
+}
+
+struct APerson: Named, Aged { // Person是一个新类型，它遵循了Aged和Named协议。
+    var name: String
+    var age: Int
+}
+
+// 函数参数类型用复合协议表示
+func wishHappyBirthday(to celebrator: Named & Aged) {
+    print("Happy birthday, \(celebrator.name), you're \(celebrator.age)!")
+}
+let birthdayPerson = APerson(name: "Malcolm", age: 21)
+wishHappyBirthday(to: birthdayPerson)
+// 打印 “Happy birthday Malcolm - you're 21!”
+
+class Location {
+    var latitude: Double
+    var longitude: Double
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
+class City: Location, Named {
+    var name: String
+    init(name: String, latitude: Double, longitude: Double) {
+        self.name = name
+        super.init(latitude: latitude, longitude: longitude)
+    }
+}
+// 任何同时遵循Location和Named的类型，其他不同时遵循这两个协议的类型被传入，都是不合法的。
+func beginConcert(in location: Location & Named) {
+    print("Hello, \(location.name)!")
+}
+ 
+let seattle = City(name: "Seattle", latitude: 47.6, longitude: -122.3)
+
+beginConcert(in: seattle) // 打印 "Hello, Seattle!"
 
 
-// ## 协议构成
+// ## 检测类型遵循的协议
+// 检测方式：
+// 1. is: 遵循协议时返回true，不遵循时返回false
+// 2. as?: 不遵循时返回nil，遵循时返回类型为协议类型的可选值
+// 3. as!: 将协议强转为某个协议类型，如果强转失败会出发运行时错误。
 
+protocol HasArea {
+    var area: Double { get }
+}
 
-// ## 检测协议遵循
+class Circle: HasArea {
+    let pi = 3.1415927
+    var radius: Double
+    var area: Double { return pi * radius * radius }
+    init(radius: Double) { self.radius = radius }
+}
+class Country: HasArea {
+    var area: Double
+    init(area: Double) { self.area = area }
+}
+class Animal {
+    var legs: Int
+    init(legs: Int) { self.legs = legs }
+}
 
+let objects: [AnyObject] = [
+    Circle(radius: 2.0),
+    Country(area: 243_610),
+    Animal(legs: 4)
+]
+for object in objects {
+    if object is HasArea {
+        print("Area is \((object as! HasArea).area)")
+    } else {
+//        let aObject = object as!HasArea  //强转失败报运行时错误
+        print("\(object) that doesn't have an area")
+    }
+}
 
-// ## 可选类型要求条件
+// ## 可选协议类型要求
+// 对于协议中的部分能力，我们可能不是必须要实现的，这个时候我们可以将他们定义为可选类型。满足可选能力的协议类型，我们称为可选协议类型。
+// 可选协议类型要求： 使用optional关键字作为前缀，表示该能力可选。
+    // 对于要和Objective-c相互打交道的协议，如果协议能力时可选的，我们要用optional声明。
+    // 并且由于协议被用于OC，所以协议名和可选部分都要加上 @objc
+    // 标记 @objc 特性的协议，只能被OC类或者同样是 @objc 的类型使用，其他类以及结构体和枚举均不能遵循这种协议
+// 标明 optional的方法和属性，他们的类型会自动变为可选类型。这种类型的调用，同样可以用可选链式类型的方式调用。
 
+//协议前无需optional修饰
+@objc protocol CounterDataSource {
+    // 这里并不是表示返回为可选类型，而是这个increment函数类型为可选，类型表示为: (int -> String)?
+    @objc optional func increment(forCount count: Int) -> Int
+    // 定义一个可选的属性
+    @objc optional var fixedIncrement: Int { get }
+}
+
+// 由于CounterDataSource时可选协议。
+// 严格来说，你可以声明一个类来遵循CounterDataSource，并且这个类无需实现这些optional方法和属性。
+// 技术上时允许的，但这并不会带来一个更好的数据展示方式。
+
+class Counter {
+    var count = 0
+    var dataSource: CounterDataSource //这里如果声明为非可选
+    func increment() {
+        // 这里表示如果dataSource有increment方法，则调用。否则返回nil
+        if let amount = dataSource.increment?(forCount: count) {
+            count += amount
+        } else if let amount = dataSource.fixedIncrement {
+            count += amount
+        }
+    }
+    init(data: CounterDataSource){
+        self.dataSource = data
+    }
+}
+
+class ThreeSource: NSObject, CounterDataSource {
+    let fixedIncrement = 3
+}
+
+var counter = Counter(data: ThreeSource())
+for _ in 1...4 {
+    counter.increment()
+    print(counter.count)
+}
+// 3
+// 6
+// 9
+// 12
+
+class TowardsZeroSource: NSObject, CounterDataSource {
+    func increment(forCount count: Int) -> Int {
+        if count == 0 {
+            return 0
+        } else if count < 0 {
+            return 1
+        } else {
+            return -1
+        }
+    }
+}
+
+counter.count = -4
+counter.dataSource = TowardsZeroSource()
+for _ in 1...5 {
+    counter.increment()
+    print(counter.count)
+}
+// -3
+// -2
+// -1
+// 0
+// 0
 
 // ## 协议拓展
 
+// 可以通过extension来为协议增加方法、构造器、下标以及计算型属性等能力。
+// 你可以基于协议本身来实现这些功能，而无需在每个遵循的协议类型中都重复同样的实现，也无需使用全局函数。
+
+// 1. 给协议RandomNumberGenerator拓展一个randomBool的方法，这个方法已经完成实现。
+// 2. 所有继承RandomNumberGenerator的类型，都自动拥有一个randomBool的方法，并且无需每个都单独实现。
+extension RandomNumberGenerator {
+    func randomBool() -> Bool {
+        return random() > 0.5
+    }
+}
+let generator2 = LinearCongruentialGenerator()
+print("Here's a random number: \(generator2.random())")
+// Prints "Here's a random number: 0.3746499199817101"
+//由于拓展RandomNumberGenerator原因，generator自动拥有一个randomBool方法。
+print("And here's a random Boolean: \(generator2.randomBool())")
+// Prints "And here's a random Boolean: true"
+
+// 协议拓展可以为协议拓展实现，但不能增加其他协议的继承。 继承都要在定义协议处声明
+
+// ### 协议拓展 提供默认实现
+// 你可以用协议拓展来增加一个默认的方法实现或者计算型属性实现。
+// 如果协议拓展增加了默认实现，在遵循协议的类型定义时，也为这些函数和属性提供了实现。那么会忽略协议拓展中的默认实现，以遵循类型实现为准。
+
+// PS： 对于有协议拓展实现默认值的类型，它和可选类型协议区别是比较清晰的。 有协议拓展默认值的类型，遵循该协议的类型无需额外提供实现，同时也不需要用可选协议类型的链式调用方式。
+
+extension PrettyTextRepresentable  {
+    var prettyTextualDescription: String {
+        return textualDescription
+    }
+}
+// ### 给协议拓展增加限制
+// 当你定义协议拓展的时候，在拓展的方法和属性前，你可以限制遵循这个协议的类型，都必须满足某些条件才有效。
+// 给协议拓展增加限制的方式，在协议名后面多加 where 从句。
+
+// 这里表示给Collection协议拓展一个allEqual的方法实现。
+// 并且Collection集合中的元素都必须遵循 Equatable 协议，这样就可以使用 ==，!= 等比较操作
+extension Collection where Element: Equatable {
+    func allEqual() -> Bool {
+        for element in self {
+            if element != self.first {
+                return false
+            }
+        }
+        return true
+    }
+}
+
+let equalNumbers = [100, 100, 100, 100, 100]
+let differentNumbers = [100, 100, 200, 100, 200]
+let notEquatable: [Any] = ["100", 100, 200, 100, 200]
+print(equalNumbers.allEqual()) // Prints "true"
+print(differentNumbers.allEqual()) // Prints "false"
+
+// 这里会报运行时错误，因为不满足Equatable，所以notEquatable对象，没有获得协议拓展的allEqual方法。
+//print(notEquatable.allEqual())
