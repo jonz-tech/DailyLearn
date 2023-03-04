@@ -1,0 +1,1342 @@
+{
+    "root": {
+        "data": {
+            "id": "cqwvfxn0p5c0",
+            "created": 1677859187257,
+            "text": "MapKIt",
+            "hyperlink": "https://developer.apple.com/documentation/mapkit/mkmaptype",
+            "hyperlinkTitle": "跳转到Apple文档"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cqwvg5j3ha00",
+                    "created": 1677859204434,
+                    "text": "MKMapView",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqwyes41mxs0",
+                            "created": 1677867560191,
+                            "text": "地图配置",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqwvou7w0rk0",
+                                    "created": 1677859885089,
+                                    "text": "preferredConfiguration: MKMapConfiguration",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwvwief5lk0",
+                                            "created": 1677860486276,
+                                            "text": "MKMapConfiguration",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwvrlh40nk0",
+                                                    "created": 1677860101148,
+                                                    "text": "MKStandardMapConfiguration",
+                                                    "note": "普通地图配置：显示街道地图、桥、路位置、路名",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwvorfmvk0",
+                                                            "created": 1677863242869,
+                                                            "text": "elevationStyle: ElevationStyle",
+                                                            "note": "告诉地图的仰角类型"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwwg2x9g80",
+                                                            "created": 1677863302337,
+                                                            "text": "emphasisStyle: EmphasisStyle",
+                                                            "note": "告诉地图强调特征点的程度"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwwuo8s4g0",
+                                                            "created": 1677863334101,
+                                                            "text": "showsTraffic: Bool",
+                                                            "note": "是否显示交通信息"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwuvmbq5k0",
+                                                            "created": 1677863179434,
+                                                            "text": "pointOfInterestFilter: MKPointOfInterestFilter",
+                                                            "note": "触摸点过滤器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwvrn5u9140",
+                                                    "created": 1677860104820,
+                                                    "text": "MKHybridMapConfiguration",
+                                                    "note": "混合卫星地图配置：包含路、路名在卫星图上",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwuvmbq5k0",
+                                                            "created": 1677863179434,
+                                                            "text": "pointOfInterestFilter: MKPointOfInterestFilter"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwv6mgw940",
+                                                            "created": 1677863203387,
+                                                            "text": "showsTraffic: Bool"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwvorfmvk0",
+                                                            "created": 1677863242869,
+                                                            "text": "elevationStyle: ElevationStyle"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwvrolx1880",
+                                                    "created": 1677860107969,
+                                                    "text": "MKImageryMapConfiguration",
+                                                    "layout_right_offset": {
+                                                        "x": 9,
+                                                        "y": 2
+                                                    },
+                                                    "note": "影像地图配置：仅显示卫星影像，没有其它地图元素，因此它没有任何其他属性。",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwwvorfmvk0",
+                                                            "created": 1677863242869,
+                                                            "text": "elevationStyle: ElevationStyle"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwvxjiqgc00",
+                                            "created": 1677860567078,
+                                            "text": "ElevationStyle",
+                                            "note": "地图仰角程度",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwvxtaeyh40",
+                                                    "created": 1677860588343,
+                                                    "text": "flat",
+                                                    "note": "// 2d平面样式：意味着地面看起来是平坦的，道路，包括桥梁和立交桥，也显得平坦。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwvxv2r4rc0",
+                                                    "created": 1677860592233,
+                                                    "text": "realistic",
+                                                    "note": "// 2.5D/3D 逼真样式：意味着地面地形再现了真实世界的高程，例如丘陵和山脉。"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwxmlpa3c0",
+                                            "created": 1677863394898,
+                                            "text": "EmphasisStyle",
+                                            "note": "特征点强调程度\n",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwxy24loo0",
+                                                    "created": 1677863419835,
+                                                    "text": "default",
+                                                    "note": "默认，呈现细节更丰富"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwy14hbp40",
+                                                    "created": 1677863426508,
+                                                    "text": "muted",
+                                                    "note": "对细节进行了弱化处理，隐去了部分细节，可以让用户关注你想让用户关注的信息。"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwxv5usts0",
+                                            "created": 1677863413531,
+                                            "text": "MKPointOfInterestFilter",
+                                            "note": "兴趣点过滤器，用于找到最终感兴趣的点",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwxn6syq9k0",
+                                                    "created": 1677865397977,
+                                                    "text": "创建过滤器",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxluaqtps0",
+                                                            "created": 1677865292389,
+                                                            "text": "includingAll: MKPointOfInterestFilter",
+                                                            "note": "包含的兴趣点集合"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxlorjrm80",
+                                                            "created": 1677865280345,
+                                                            "text": "excludingAll: MKPointOfInterestFilter",
+                                                            "note": "不包含的兴趣点集合"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxnfsk11k0",
+                                                            "created": 1677865417543,
+                                                            "text": "init(excluding: [MKPointOfInterestCategory])"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxnhiducg0",
+                                                            "created": 1677865421281,
+                                                            "text": "init(including: [MKPointOfInterestCategory])"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxna6ygrc0",
+                                                    "created": 1677865405353,
+                                                    "text": "查询过滤器",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxnkcgjhs0",
+                                                            "created": 1677865427453,
+                                                            "text": "excludes(MKPointOfInterestCategory) -> Bool"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwxnokpldc0",
+                                                            "created": 1677865436660,
+                                                            "text": "includes(MKPointOfInterestCategory) -> Bool"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwxp1aewdc0",
+                                            "created": 1677865542699,
+                                            "text": "MKPointOfInterestCategory",
+                                            "expandState": "collapse",
+                                            "note": "兴趣点类型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwxr2u6b2o0",
+                                                    "created": 1677865702799,
+                                                    "text": "airport: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrd3uny00",
+                                                    "created": 1677865725152,
+                                                    "text": "amusementPark: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrijfg2o0",
+                                                    "created": 1677865736978,
+                                                    "text": "aquarium: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrmaav1c0",
+                                                    "created": 1677865745133,
+                                                    "text": "atm: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrrgsakw0",
+                                                    "created": 1677865756410,
+                                                    "text": "bakery: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrvf4cvk0",
+                                                    "created": 1677865765016,
+                                                    "text": "bank: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxrys8tf40",
+                                                    "created": 1677865772340,
+                                                    "text": "beach: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxs5fpk7k0",
+                                                    "created": 1677865786819,
+                                                    "text": "brewery: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxs97ggjs0",
+                                                    "created": 1677865795027,
+                                                    "text": "cafe: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxsemqun40",
+                                                    "created": 1677865806836,
+                                                    "text": "campground: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxsjxob0g0",
+                                                    "created": 1677865818380,
+                                                    "text": "carRental: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxspu35xs0",
+                                                    "created": 1677865831224,
+                                                    "text": "evCharger: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxsw9j56w0",
+                                                    "created": 1677865845219,
+                                                    "text": "fireStation: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxt4gzfg00",
+                                                    "created": 1677865863084,
+                                                    "text": "fitnessCenter: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxta5wwds0",
+                                                    "created": 1677865875475,
+                                                    "text": "foodMarket: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxtfy78lc0",
+                                                    "created": 1677865888070,
+                                                    "text": "gasStation: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxtjszn340",
+                                                    "created": 1677865896462,
+                                                    "text": "hospital: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxtoes3og0",
+                                                    "created": 1677865906486,
+                                                    "text": "hotel: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxtuvlgn40",
+                                                    "created": 1677865920564,
+                                                    "text": "laundry: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxtzmeizk0",
+                                                    "created": 1677865930891,
+                                                    "text": "library: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxu6e8yu80",
+                                                    "created": 1677865945636,
+                                                    "text": "marina: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxucllb600",
+                                                    "created": 1677865959141,
+                                                    "text": "movieTheater: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxugje0nc0",
+                                                    "created": 1677865967715,
+                                                    "text": "museum: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxukn0fs80",
+                                                    "created": 1677865976641,
+                                                    "text": "nationalPark: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxuql2ebk0",
+                                                    "created": 1677865989584,
+                                                    "text": "nightlife: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxux60tls0",
+                                                    "created": 1677866003912,
+                                                    "text": "park: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxv0uqeow0",
+                                                    "created": 1677866011936,
+                                                    "text": "parking: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxv67sjns0",
+                                                    "created": 1677866023610,
+                                                    "text": "pharmacy: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxva8xwds0",
+                                                    "created": 1677866032386,
+                                                    "text": "police: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxvduv36w0",
+                                                    "created": 1677866040242,
+                                                    "text": "postOffice: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxviu6e3k0",
+                                                    "created": 1677866051085,
+                                                    "text": "publicTransport: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxvndroug0",
+                                                    "created": 1677866060977,
+                                                    "text": "restaurant: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxvqznjjs0",
+                                                    "created": 1677866068830,
+                                                    "text": "restroom: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxvumprtk0",
+                                                    "created": 1677866076755,
+                                                    "text": "school: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxvzoub1s0",
+                                                    "created": 1677866087767,
+                                                    "text": "stadium: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxw3z07mo0",
+                                                    "created": 1677866097089,
+                                                    "text": "store: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxw9cx22g0",
+                                                    "created": 1677866108814,
+                                                    "text": "theater: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxwdfoyy00",
+                                                    "created": 1677866117689,
+                                                    "text": "university: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxwin8it40",
+                                                    "created": 1677866129029,
+                                                    "text": "winery: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwxwmegjp40",
+                                                    "created": 1677866137205,
+                                                    "text": "zoo: MKPointOfInterestCategory"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqwvgdi4n4w0",
+                                    "created": 1677859221790,
+                                    "text": " mapType: MKMapType 废弃",
+                                    "expandState": "collapse",
+                                    "note": "属性。\n即将废弃，使用MKMapConfiguration代替\n"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwvgytv1iw0",
+                                            "created": 1677859268212,
+                                            "text": "standard",
+                                            "note": "显示路和路名"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwvhnvkops0",
+                                            "created": 1677859322735,
+                                            "text": "satellite",
+                                            "note": "卫星图层"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwvi3ykl9c0",
+                                            "created": 1677859357745,
+                                            "text": "hybrid",
+                                            "note": "卫星图，同时路和路名在卫星图上"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwvio11qls0",
+                                            "created": 1677859401430,
+                                            "text": "satelliteFlyover",
+                                            "note": "卫星3D图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwvjfvs8e80",
+                                            "created": 1677859462062,
+                                            "text": "hybridFlyover",
+                                            "note": "卫星3D图，同时路和路名在卫星图上"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqwy0ypzy5c0",
+                            "created": 1677866477481,
+                            "text": "地图属性控制",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqwxzqxzuk80",
+                                    "created": 1677866382187,
+                                    "text": "isRotateEnabled",
+                                    "note": "告诉地图是否随着相机的角度变化，地图围绕其中心点进行旋转"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqwwstsqhow0",
+                                    "created": 1677863018740,
+                                    "text": "isPitchEnabled: Bool",
+                                    "note": "告诉地图是否使用相机的斜角。即2.5D / 3D效果"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqwwrfeekps0",
+                                    "created": 1677862909034,
+                                    "text": "isScrollEnabled: Bool",
+                                    "note": "用户上否可以在地图上滚动"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cqwwpzppc2g0",
+                                    "created": 1677862796524,
+                                    "text": "isZoomEnabled: Bool",
+                                    "note": "用户是否可以在地图上手势缩放"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqwy263lr3k0",
+                            "created": 1677866571906,
+                            "text": "管理地图可见部分",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqwy8b5mq5c0",
+                                    "created": 1677867053097,
+                                    "text": "属性",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwy2wbnxc00",
+                                            "created": 1677866628989,
+                                            "text": "region: MKCoordinateRegion",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwy3py3z9s0",
+                                                    "created": 1677866693473,
+                                                    "text": "属性",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy3dn4neo0",
+                                                            "created": 1677866666688,
+                                                            "text": "span: MKCoordinateSpan"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy3ans0j40",
+                                                            "created": 1677866660197,
+                                                            "text": "center: CLLocationCoordinate2D"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwy3urcdo80",
+                                                    "created": 1677866703948,
+                                                    "text": "创建"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy40v5w3c0",
+                                                            "created": 1677866717240,
+                                                            "text": "init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy43yy0r40",
+                                                            "created": 1677866723999,
+                                                            "text": "init(MKMapRect)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy49v1k5k0",
+                                                            "created": 1677866736823,
+                                                            "text": "init(center:latitudinalMeters:longitudinalMeters:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy4er3iy00",
+                                                            "created": 1677866747469,
+                                                            "text": "init()"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwy5au20zk0",
+                                                    "created": 1677866817306,
+                                                    "text": "MKCoordinateSpan"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy5lmt1x40",
+                                                            "created": 1677866840811,
+                                                            "text": "属性"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cqwy5v6pejc0",
+                                                                    "created": 1677866861605,
+                                                                    "text": "latitudeDelta: CLLocationDegrees"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cqwy5ykk43s0",
+                                                                    "created": 1677866868973,
+                                                                    "text": "longitudeDelta: CLLocationDegrees"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cqwy5oj29zc0",
+                                                            "created": 1677866847115,
+                                                            "text": "创建"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cqwy62m2uj40",
+                                                                    "created": 1677866877772,
+                                                                    "text": "init(latitudeDelta: CLLocationDegrees, longitudeDelta: CLLocationDegrees)"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cqwy651zxmg0",
+                                                                    "created": 1677866883088,
+                                                                    "text": "init()"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwy7ab1g480",
+                                                    "created": 1677866972883,
+                                                    "text": "MKMapRect"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy89ph0xs0",
+                                            "created": 1677867049943,
+                                            "text": "centerCoordinate: CLLocationCoordinate2D "
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy98jbdww0",
+                                            "created": 1677867125758,
+                                            "text": "visibleMapRect: MKMapRect"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqwy8s8tv200",
+                                    "created": 1677867090296,
+                                    "text": "方法",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwy8vsl0800",
+                                            "created": 1677867098020,
+                                            "text": "setCenter(_:animated:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy83q2y7k0",
+                                            "created": 1677867036919,
+                                            "text": "setRegion(_:animated:)",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy94mlgp40",
+                                            "created": 1677867117249,
+                                            "text": "showAnnotations(_:animated:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy9gmalmw0",
+                                            "created": 1677867143353,
+                                            "text": "setVisibleMapRect(_:animated:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwy9ms7se80",
+                                            "created": 1677867156771,
+                                            "text": "setVisibleMapRect(_:edgePadding:animated:)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cqwyb1cjgps0",
+                            "created": 1677867266839,
+                            "text": "限制地图视图",
+                            "layout_right_offset": {
+                                "x": 25,
+                                "y": 38
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cqwyebmbvi80",
+                            "created": 1677867524292,
+                            "text": "自定义地图行为",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 25,
+                                "y": -65
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqwwghc70mo0",
+                                    "created": 1677862051248,
+                                    "text": "selectableMapFeatures: MKMapFeatureOptions",
+                                    "note": "告诉地图哪一类的特征对象，用户可以产生交互",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwwhkoqpnc0",
+                                            "created": 1677862136901,
+                                            "text": "physicalFeatures",
+                                            "note": "物理特性，比如山、河、海洋"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwhqfm56g0",
+                                            "created": 1677862149410,
+                                            "text": "pointsOfInterest",
+                                            "note": "用户感兴趣的兴趣点，比如博物馆、咖啡厅、公园、学校"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwhv6dh9s0",
+                                            "created": 1677862159735,
+                                            "text": "territories",
+                                            "note": "领土边界，比如国家、洲、临近领土"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqww2g2bg480",
+                                    "created": 1677860951376,
+                                    "text": "delegate: MKMapViewDelegate",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqww9810bzc0",
+                                            "created": 1677861482432,
+                                            "text": "响应位置变化",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww3cp8mig0",
+                                                    "created": 1677861022419,
+                                                    "text": "mapView(_:regionDidChangeAnimated:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww377gpig0",
+                                                    "created": 1677861010460,
+                                                    "text": "mapViewDidChangeVisibleRegion(_:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww2totld40",
+                                                    "created": 1677860981035,
+                                                    "text": "mapView(_:regionWillChangeAnimated:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww90m9too0",
+                                            "created": 1677861466303,
+                                            "text": "加载地图数据",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww5me84rk0",
+                                                    "created": 1677861200249,
+                                                    "text": "mapViewDidFinishRenderingMap(_:fullyRendered:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww5dhye880",
+                                                    "created": 1677861180883,
+                                                    "text": "mapViewWillStartRenderingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww5bjche80",
+                                                    "created": 1677861176614,
+                                                    "text": "mapViewDidFailLoadingMap(_:withError:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww52vvv7k0",
+                                                    "created": 1677861157781,
+                                                    "text": "mapViewDidFinishLoadingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww4vf6qsg0",
+                                                    "created": 1677861141534,
+                                                    "text": "mapViewWillStartLoadingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww8s5yzkg0",
+                                            "created": 1677861447903,
+                                            "text": "跟踪用户位置数据",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didChange:animated:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapViewWillStartLocatingUser(_:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapViewDidStopLocatingUser(_:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didUpdate:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didFailToLocateUserWithError:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww9yei9cw0",
+                                            "created": 1677861539844,
+                                            "text": "管理注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:viewFor:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:didAdd:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:annotationView:calloutAccessoryControlTapped:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:clusterAnnotationForMemberAnnotations:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwbkes83k0",
+                                            "created": 1677861666114,
+                                            "text": "拖动注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwbowl0zc0",
+                                                    "created": 1677861675898,
+                                                    "text": "mapView(_:annotationView:didChange:fromOldState:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwcsk306o0",
+                                            "created": 1677861762213,
+                                            "text": "选择注释和注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didSelect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didDeselect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didDeselect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didSelect:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwecricqo0",
+                                            "created": 1677861884562,
+                                            "text": "管控显示的overlay",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:rendererFor:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:didAdd:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:viewFor:) 废弃"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:didAddOverlayViews:) 废弃"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-purple",
+    "version": "1.4.43"
+}
