@@ -18,13 +18,379 @@
                 "children": [
                     {
                         "data": {
+                            "id": "cqwyebmbvi80",
+                            "created": 1677867524292,
+                            "text": "自定义地图特征行为",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 162,
+                                "y": 38
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cqwwghc70mo0",
+                                    "created": 1677862051248,
+                                    "text": "selectableMapFeatures: MKMapFeatureOptions",
+                                    "note": "告诉地图哪一类的特征对象，用户可以产生交互",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqwwhkoqpnc0",
+                                            "created": 1677862136901,
+                                            "text": "physicalFeatures",
+                                            "note": "物理特性，比如山、河、海洋"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwhqfm56g0",
+                                            "created": 1677862149410,
+                                            "text": "pointsOfInterest",
+                                            "note": "用户感兴趣的兴趣点，比如博物馆、咖啡厅、公园、学校"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwhv6dh9s0",
+                                            "created": 1677862159735,
+                                            "text": "territories",
+                                            "note": "领土边界，比如国家、洲、临近领土"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cqww2g2bg480",
+                                    "created": 1677860951376,
+                                    "text": "delegate: MKMapViewDelegate",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cqww9810bzc0",
+                                            "created": 1677861482432,
+                                            "text": "响应位置变化",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww3cp8mig0",
+                                                    "created": 1677861022419,
+                                                    "text": "mapView(_:regionDidChangeAnimated:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww377gpig0",
+                                                    "created": 1677861010460,
+                                                    "text": "mapViewDidChangeVisibleRegion(_:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww2totld40",
+                                                    "created": 1677860981035,
+                                                    "text": "mapView(_:regionWillChangeAnimated:)",
+                                                    "note": "响应位置变化",
+                                                    "background": "#d6e3bc"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww90m9too0",
+                                            "created": 1677861466303,
+                                            "text": "加载地图数据",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww5me84rk0",
+                                                    "created": 1677861200249,
+                                                    "text": "mapViewDidFinishRenderingMap(_:fullyRendered:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww5dhye880",
+                                                    "created": 1677861180883,
+                                                    "text": "mapViewWillStartRenderingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww5bjche80",
+                                                    "created": 1677861176614,
+                                                    "text": "mapViewDidFailLoadingMap(_:withError:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww52vvv7k0",
+                                                    "created": 1677861157781,
+                                                    "text": "mapViewDidFinishLoadingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww4vf6qsg0",
+                                                    "created": 1677861141534,
+                                                    "text": "mapViewWillStartLoadingMap(_:)",
+                                                    "background": "#dbe5f1",
+                                                    "note": "加载地图数据"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww8s5yzkg0",
+                                            "created": 1677861447903,
+                                            "text": "跟踪用户位置数据",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didChange:animated:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapViewWillStartLocatingUser(_:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapViewDidStopLocatingUser(_:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didUpdate:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqww6yo6ync0",
+                                                    "created": 1677861305337,
+                                                    "text": "mapView(_:didFailToLocateUserWithError:)",
+                                                    "background": "#daeef3",
+                                                    "note": "跟踪用户位置数据"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqww9yei9cw0",
+                                            "created": 1677861539844,
+                                            "text": "管理注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:viewFor:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:didAdd:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:annotationView:calloutAccessoryControlTapped:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwa4tpark0",
+                                                    "created": 1677861553824,
+                                                    "text": "mapView(_:clusterAnnotationForMemberAnnotations:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwbkes83k0",
+                                            "created": 1677861666114,
+                                            "text": "拖动注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwbowl0zc0",
+                                                    "created": 1677861675898,
+                                                    "text": "mapView(_:annotationView:didChange:fromOldState:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwcsk306o0",
+                                            "created": 1677861762213,
+                                            "text": "选择注释和注释视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didSelect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didDeselect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didDeselect:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwd5egv1k0",
+                                                    "created": 1677861790172,
+                                                    "text": "mapView(_:didSelect:)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cqwwecricqo0",
+                                            "created": 1677861884562,
+                                            "text": "管控显示的overlay",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:rendererFor:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:didAdd:)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:viewFor:) 废弃"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cqwwen64rnk0",
+                                                    "created": 1677861907214,
+                                                    "text": "mapView(_:didAddOverlayViews:) 废弃"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
                             "id": "cqwyes41mxs0",
                             "created": 1677867560191,
                             "text": "地图配置",
                             "expandState": "collapse",
                             "layout_right_offset": {
-                                "x": 169,
-                                "y": 4
+                                "x": 170,
+                                "y": -118
                             }
                         },
                         "children": [
@@ -698,8 +1064,8 @@
                             "text": "地图属性控制",
                             "expandState": "collapse",
                             "layout_right_offset": {
-                                "x": 162,
-                                "y": 1
+                                "x": 168,
+                                "y": -116
                             }
                         },
                         "children": [
@@ -748,8 +1114,8 @@
                             "text": "管理地图可见区域",
                             "expandState": "collapse",
                             "layout_right_offset": {
-                                "x": 165,
-                                "y": -2
+                                "x": 160,
+                                "y": -64
                             }
                         },
                         "children": [
@@ -758,7 +1124,7 @@
                                     "id": "cqwy8b5mq5c0",
                                     "created": 1677867053097,
                                     "text": "属性",
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -917,7 +1283,8 @@
                                         "data": {
                                             "id": "cqwy98jbdww0",
                                             "created": 1677867125758,
-                                            "text": "visibleMapRect: MKMapRect"
+                                            "text": "visibleMapRect: MKMapRect",
+                                            "note": "地图可见区域，如果要添加动画，使用setVisibleMapRect(_:animated:)代替"
                                         },
                                         "children": []
                                     }
@@ -928,14 +1295,15 @@
                                     "id": "cqwy8s8tv200",
                                     "created": 1677867090296,
                                     "text": "方法",
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cqwy8vsl0800",
                                             "created": 1677867098020,
-                                            "text": "setCenter(_:animated:)"
+                                            "text": "setCenter(_:animated:)",
+                                            "note": "设置中心点"
                                         },
                                         "children": []
                                     },
@@ -952,7 +1320,8 @@
                                         "data": {
                                             "id": "cqwy94mlgp40",
                                             "created": 1677867117249,
-                                            "text": "showAnnotations(_:animated:)"
+                                            "text": "showAnnotations(_:animated:)",
+                                            "note": "显示注释视图"
                                         },
                                         "children": []
                                     },
@@ -982,8 +1351,8 @@
                             "created": 1677867266839,
                             "text": "限制地图视图",
                             "layout_right_offset": {
-                                "x": 164,
-                                "y": -4
+                                "x": 162,
+                                "y": -64
                             },
                             "expandState": "collapse"
                         },
@@ -1000,7 +1369,8 @@
                                         "data": {
                                             "id": "cqwyhz1yn6w0",
                                             "created": 1677867810395,
-                                            "text": "cameraBoundary: CameraBoundary"
+                                            "text": "cameraBoundary: CameraBoundary",
+                                            "note": "地图视角，相机边界的中心点。如果要动画，使用setCameraBoundary(_:animated:)代替"
                                         },
                                         "children": []
                                     },
@@ -1008,7 +1378,8 @@
                                         "data": {
                                             "id": "cqwyiavxgkg0",
                                             "created": 1677867836152,
-                                            "text": "cameraZoomRange: CameraZoomRange"
+                                            "text": "cameraZoomRange: CameraZoomRange",
+                                            "note": "相机远近镜头范围"
                                         },
                                         "children": []
                                     }
@@ -1034,7 +1405,8 @@
                                         "data": {
                                             "id": "cqwyi7bkygw0",
                                             "created": 1677867828392,
-                                            "text": "setCameraZoomRange(MKMapView.CameraZoomRange?, animated: Bool)"
+                                            "text": "setCameraZoomRange(MKMapView.CameraZoomRange?, animated: Bool)",
+                                            "note": "设置相机远近镜头范围"
                                         },
                                         "children": []
                                     }
@@ -1045,24 +1417,155 @@
                                     "id": "cqwyj8o41jc0",
                                     "created": 1677867909690,
                                     "text": "类型",
-                                    "expandState": "expand"
+                                    "expandState": "collapse"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cqwyixgkj6w0",
                                             "created": 1677867885289,
-                                            "text": "CameraBoundary"
+                                            "text": "CameraBoundary",
+                                            "expandState": "collapse"
                                         },
-                                        "children": []
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr0aey04vog0",
+                                                    "created": 1678206106205,
+                                                    "text": "创建相机边界"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0agaa2mxc0",
+                                                            "created": 1678206211291,
+                                                            "text": "init(coder:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0agiqt72w0",
+                                                            "created": 1678206229717,
+                                                            "text": "init(coordinateRegion:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0agmqt7480",
+                                                            "created": 1678206238424,
+                                                            "text": "init(mapRect:)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr0af2nrpw80",
+                                                    "created": 1678206116341,
+                                                    "text": "访问相机边界"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0agtf41ao0",
+                                                            "created": 1678206252955,
+                                                            "text": "mapRect: MKMapRect",
+                                                            "note": "描述相机边界的长方形"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0ah1n1cq80",
+                                                            "created": 1678206270848,
+                                                            "text": "region: MKCoordinateRegion",
+                                                            "note": "描述相机边界的坐标点"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     },
                                     {
                                         "data": {
                                             "id": "cqwyjcmjf9k0",
                                             "created": 1677867918302,
-                                            "text": "CameraZoomRange"
+                                            "text": "CameraZoomRange",
+                                            "expandState": "expand"
                                         },
-                                        "children": []
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr0aiqyxenc0",
+                                                    "created": 1678206404351,
+                                                    "text": "创建相机远近视角",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0aieb9ymg0",
+                                                            "created": 1678206376799,
+                                                            "text": "MKMapCameraZoomDefault: CLLocationDistance"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0ai7stjxs0",
+                                                            "created": 1678206362623,
+                                                            "text": "init(maxCenterCoordinateDistance:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0afk10qsw0",
+                                                            "created": 1678206154147,
+                                                            "text": "init(minCenterCoordinateDistance:maxCenterCoordinateDistance:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0afx9jtnk0",
+                                                            "created": 1678206182961,
+                                                            "text": "init(minCenterCoordinateDistance:)"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr0aj0wfyq00",
+                                                    "created": 1678206425968,
+                                                    "text": "访问相机远近视角"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0ajcactc80",
+                                                            "created": 1678206450755,
+                                                            "text": "maxCenterCoordinateDistance: CLLocationDistance"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr0ajg5hznk0",
+                                                            "created": 1678206459168,
+                                                            "text": "minCenterCoordinateDistance: CLLocationDistance"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -1070,49 +1573,243 @@
                     },
                     {
                         "data": {
-                            "id": "cqwyebmbvi80",
-                            "created": 1677867524292,
-                            "text": "自定义地图特征行为",
+                            "id": "cr0alhijork0",
+                            "created": 1678206618862,
+                            "text": "地图显示设置",
+                            "note": "显示缩放信息",
                             "expandState": "collapse",
                             "layout_right_offset": {
-                                "x": 186,
-                                "y": -241
+                                "x": 156,
+                                "y": -68
                             }
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "cqwwghc70mo0",
-                                    "created": 1677862051248,
-                                    "text": "selectableMapFeatures: MKMapFeatureOptions",
-                                    "note": "告诉地图哪一类的特征对象，用户可以产生交互",
+                                    "id": "cr0alt6u9s00",
+                                    "created": 1678206644275,
+                                    "text": "setCamera(_:animated:)",
+                                    "note": "设置相机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0am5m3v400",
+                                    "created": 1678206671320,
+                                    "text": "camera: MKMapCamera",
+                                    "note": "访问相机"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0amditqeg0",
+                                    "created": 1678206688536,
+                                    "text": "showsCompass: Bool",
+                                    "note": "是否显示指南针"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0amtg78vs0",
+                                    "created": 1678206723205,
+                                    "text": "showsPitchControl: Bool",
+                                    "note": "macos: 显示场地信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0apaatg800",
+                                    "created": 1678206916614,
+                                    "text": "showsScale: Bool ",
+                                    "note": "显示缩放信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0aqhzcbmo0",
+                                    "created": 1678207011698,
+                                    "text": "showsZoomControls: Bool",
+                                    "note": "mac os 显示相机镜头缩放控制"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0ared6x0w0",
+                                    "created": 1678207082193,
+                                    "text": "showsBuildings: Bool 废弃⚠️",
+                                    "note": "显示建筑物信息，使用MKStandardMapConfiguration代替"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0as25pf7s0",
+                                    "created": 1678207133983,
+                                    "text": "showsPointsOfInterest: Bool 废弃⚠️",
+                                    "note": "显示兴趣点信息，已废弃。可使用pointOfInterestFilter代替"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0asy6rgrs0",
+                                    "created": 1678207203704,
+                                    "text": "pointOfInterestFilter: MKPointOfInterestFilter? 废弃⚠️",
+                                    "note": "点位新区点显示过滤器，使用MKPointOfInterestFilter代替"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0atydn4j40",
+                                    "created": 1678207282484,
+                                    "text": "showsTraffic: Bool 废弃⚠️",
+                                    "note": "显示交通信息，使用MKStandardMapConfiguration 或者 MKHybridMapConfiguration里的交通信息配置代替"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr0awu7x7pk0",
+                            "created": 1678207508523,
+                            "text": "显示用户位置信息",
+                            "layout_right_offset": {
+                                "x": 161,
+                                "y": -48
+                            },
+                            "note": " ",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr0b37q31js0",
+                                    "created": 1678208008106,
+                                    "text": "showsUserLocation: Bool",
+                                    "note": "告知地图是否要显示用户信息"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0b4ggxbl40",
+                                    "created": 1678208105506,
+                                    "text": "isUserLocationVisible: Bool",
+                                    "note": "用户位置信息是否可见"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0b5r4c8ao0",
+                                    "created": 1678208207054,
+                                    "text": "userLocation: MKUserLocation ",
+                                    "note": "代表用户位置的注释视图",
                                     "expandState": "collapse"
                                 },
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "cqwwhkoqpnc0",
-                                            "created": 1677862136901,
-                                            "text": "physicalFeatures",
-                                            "note": "物理特性，比如山、河、海洋"
+                                            "id": "cr0b6ttkunk0",
+                                            "created": 1678208291298,
+                                            "text": "检测用户信息"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr0b7jnd3nc0",
+                                                    "created": 1678208347518,
+                                                    "text": "location: CLLocation"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr0b7nm71fs0",
+                                                    "created": 1678208356155,
+                                                    "text": "isUpdating: Bool"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr0b7xkkz5s0",
+                                                    "created": 1678208377825,
+                                                    "text": "heading: CLHeading?",
+                                                    "note": " 如果tracking模式不是MKUserTrackingMode.followWithHeading. 该属性返回空"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0b78ftw680",
+                                            "created": 1678208323118,
+                                            "text": "访问注释视图"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr0b8ymz0uw0",
+                                                    "created": 1678208458510,
+                                                    "text": "title: String?"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr0b93mu9400",
+                                                    "created": 1678208469386,
+                                                    "text": "subtitle: String?"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0b9spvu7s0",
+                                    "created": 1678208523990,
+                                    "text": "userTrackingMode: MKUserTrackingMode",
+                                    "note": "用户跟踪模式",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr0bbx6sv6w0",
+                                            "created": 1678208690448,
+                                            "text": "none",
+                                            "note": "不跟踪用户位置"
                                         },
                                         "children": []
                                     },
                                     {
                                         "data": {
-                                            "id": "cqwwhqfm56g0",
-                                            "created": 1677862149410,
-                                            "text": "pointsOfInterest",
-                                            "note": "用户感兴趣的兴趣点，比如博物馆、咖啡厅、公园、学校"
+                                            "id": "cr0bcdvm9600",
+                                            "created": 1678208726777,
+                                            "text": "follow",
+                                            "note": "地图跟踪用户位置信息"
                                         },
                                         "children": []
                                     },
                                     {
                                         "data": {
-                                            "id": "cqwwhv6dh9s0",
-                                            "created": 1677862159735,
-                                            "text": "territories",
-                                            "note": "领土边界，比如国家、洲、临近领土"
+                                            "id": "cr0bcrtyn340",
+                                            "created": 1678208757152,
+                                            "text": "followWithHeading",
+                                            "note": "跟踪用户位置，并且会随相机镜头旋转"
                                         },
                                         "children": []
                                     }
@@ -1120,317 +1817,81 @@
                             },
                             {
                                 "data": {
-                                    "id": "cqww2g2bg480",
-                                    "created": 1677860951376,
-                                    "text": "delegate: MKMapViewDelegate",
-                                    "expandState": "collapse"
+                                    "id": "cr0bdlzrz340",
+                                    "created": 1678208822807,
+                                    "text": "setUserTrackingMode(_:animated:)",
+                                    "note": "设置跟踪模式"
                                 },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cqww9810bzc0",
-                                            "created": 1677861482432,
-                                            "text": "响应位置变化",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqww3cp8mig0",
-                                                    "created": 1677861022419,
-                                                    "text": "mapView(_:regionDidChangeAnimated:)",
-                                                    "note": "响应位置变化",
-                                                    "background": "#d6e3bc"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww377gpig0",
-                                                    "created": 1677861010460,
-                                                    "text": "mapViewDidChangeVisibleRegion(_:)",
-                                                    "note": "响应位置变化",
-                                                    "background": "#d6e3bc"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww2totld40",
-                                                    "created": 1677860981035,
-                                                    "text": "mapView(_:regionWillChangeAnimated:)",
-                                                    "note": "响应位置变化",
-                                                    "background": "#d6e3bc"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqww90m9too0",
-                                            "created": 1677861466303,
-                                            "text": "加载地图数据",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqww5me84rk0",
-                                                    "created": 1677861200249,
-                                                    "text": "mapViewDidFinishRenderingMap(_:fullyRendered:)",
-                                                    "background": "#dbe5f1",
-                                                    "note": "加载地图数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww5dhye880",
-                                                    "created": 1677861180883,
-                                                    "text": "mapViewWillStartRenderingMap(_:)",
-                                                    "background": "#dbe5f1",
-                                                    "note": "加载地图数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww5bjche80",
-                                                    "created": 1677861176614,
-                                                    "text": "mapViewDidFailLoadingMap(_:withError:)",
-                                                    "background": "#dbe5f1",
-                                                    "note": "加载地图数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww52vvv7k0",
-                                                    "created": 1677861157781,
-                                                    "text": "mapViewDidFinishLoadingMap(_:)",
-                                                    "background": "#dbe5f1",
-                                                    "note": "加载地图数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww4vf6qsg0",
-                                                    "created": 1677861141534,
-                                                    "text": "mapViewWillStartLoadingMap(_:)",
-                                                    "background": "#dbe5f1",
-                                                    "note": "加载地图数据"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqww8s5yzkg0",
-                                            "created": 1677861447903,
-                                            "text": "跟踪用户位置数据",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqww6yo6ync0",
-                                                    "created": 1677861305337,
-                                                    "text": "mapView(_:didChange:animated:)",
-                                                    "background": "#daeef3",
-                                                    "note": "跟踪用户位置数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww6yo6ync0",
-                                                    "created": 1677861305337,
-                                                    "text": "mapViewWillStartLocatingUser(_:)",
-                                                    "background": "#daeef3",
-                                                    "note": "跟踪用户位置数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww6yo6ync0",
-                                                    "created": 1677861305337,
-                                                    "text": "mapViewDidStopLocatingUser(_:)",
-                                                    "background": "#daeef3",
-                                                    "note": "跟踪用户位置数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww6yo6ync0",
-                                                    "created": 1677861305337,
-                                                    "text": "mapView(_:didUpdate:)",
-                                                    "background": "#daeef3",
-                                                    "note": "跟踪用户位置数据"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqww6yo6ync0",
-                                                    "created": 1677861305337,
-                                                    "text": "mapView(_:didFailToLocateUserWithError:)",
-                                                    "background": "#daeef3",
-                                                    "note": "跟踪用户位置数据"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqww9yei9cw0",
-                                            "created": 1677861539844,
-                                            "text": "管理注释视图",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqwwa4tpark0",
-                                                    "created": 1677861553824,
-                                                    "text": "mapView(_:viewFor:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwa4tpark0",
-                                                    "created": 1677861553824,
-                                                    "text": "mapView(_:didAdd:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwa4tpark0",
-                                                    "created": 1677861553824,
-                                                    "text": "mapView(_:annotationView:calloutAccessoryControlTapped:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwa4tpark0",
-                                                    "created": 1677861553824,
-                                                    "text": "mapView(_:clusterAnnotationForMemberAnnotations:)"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqwwbkes83k0",
-                                            "created": 1677861666114,
-                                            "text": "拖动注释视图",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqwwbowl0zc0",
-                                                    "created": 1677861675898,
-                                                    "text": "mapView(_:annotationView:didChange:fromOldState:)"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqwwcsk306o0",
-                                            "created": 1677861762213,
-                                            "text": "选择注释和注释视图",
-                                            "expandState": "collapse"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqwwd5egv1k0",
-                                                    "created": 1677861790172,
-                                                    "text": "mapView(_:didSelect:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwd5egv1k0",
-                                                    "created": 1677861790172,
-                                                    "text": "mapView(_:didDeselect:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwd5egv1k0",
-                                                    "created": 1677861790172,
-                                                    "text": "mapView(_:didDeselect:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwd5egv1k0",
-                                                    "created": 1677861790172,
-                                                    "text": "mapView(_:didSelect:)"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cqwwecricqo0",
-                                            "created": 1677861884562,
-                                            "text": "管控显示的overlay",
-                                            "expandState": "expand"
-                                        },
-                                        "children": [
-                                            {
-                                                "data": {
-                                                    "id": "cqwwen64rnk0",
-                                                    "created": 1677861907214,
-                                                    "text": "mapView(_:rendererFor:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwen64rnk0",
-                                                    "created": 1677861907214,
-                                                    "text": "mapView(_:didAdd:)"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwen64rnk0",
-                                                    "created": 1677861907214,
-                                                    "text": "mapView(_:viewFor:) 废弃"
-                                                },
-                                                "children": []
-                                            },
-                                            {
-                                                "data": {
-                                                    "id": "cqwwen64rnk0",
-                                                    "created": 1677861907214,
-                                                    "text": "mapView(_:didAddOverlayViews:) 废弃"
-                                                },
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr0bfq92taw0",
+                            "created": 1678208988805,
+                            "text": "标点注释视图",
+                            "layout_right_offset": {
+                                "x": 169,
+                                "y": -21
+                            },
+                            "note": " ",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr0bfz1geq80",
+                                    "created": 1678209007935,
+                                    "text": "annotations: [MKAnnotation]",
+                                    "note": "注释视图信息集合"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0bgibgf0o0",
+                                    "created": 1678209049899,
+                                    "text": "addAnnotation(_:)",
+                                    "note": "添加单个注释视图"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0bgtww5vc0",
+                                    "created": 1678209075140,
+                                    "text": "addAnnotations(_:)",
+                                    "note": "添加多个注释视图"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0bh8thw2g0",
+                                    "created": 1678209107586,
+                                    "text": "removeAnnotation(_:)",
+                                    "note": "移除单个注释视图"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0bhm850io0",
+                                    "created": 1678209136770,
+                                    "text": "removeAnnotations(_:)",
+                                    "note": "移除多个注释视图"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr0bi2hgzts0",
+                                    "created": 1678209172162,
+                                    "text": "annotations(in mapRect: MKMapRect) -> Set<AnyHashable>",
+                                    "note": "返回指定区域的注释视图"
+                                },
+                                "children": []
                             }
                         ]
                     }
