@@ -1,0 +1,299 @@
+{
+    "root": {
+        "data": {
+            "id": "cthyy1e1rwo0",
+            "created": 1687314145277,
+            "text": "copilot"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cthyyvdc0ow0",
+                    "created": 1687314210537,
+                    "text": "通用 general"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cthyzb6qfr40",
+                    "created": 1687314244966,
+                    "text": "服务 service"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cthz1xohzu00",
+                            "created": 1687314450658,
+                            "text": "GithubCopilot"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cthz22w6qb40",
+                            "created": 1687314462007,
+                            "text": "Codeium"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cthz26l2co80",
+                            "created": 1687314470041,
+                            "text": "OpenAi"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cthz2hqobg00",
+                            "created": 1687314494325,
+                            "text": "Azure"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cthz2nga9q00",
+                            "created": 1687314506758,
+                            "text": "必应搜索 BingSearch"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cthyzu8lqyw0",
+                    "created": 1687314286438,
+                    "text": "详情 feature "
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cthz3lr93e80",
+                            "created": 1687314581431,
+                            "text": "建议 Suggestion",
+                            "note": "路径: \nCore -> HostApp -> FeatureSettings\n\n"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cthzaaqgt0g0",
+                                    "created": 1687315105988,
+                                    "text": "SuggestionSettingsView",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cthz6h1bfns0",
+                                            "created": 1687314806249,
+                                            "text": "FeatureProvider"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cthz6sx3j080",
+                                                    "created": 1687314832115,
+                                                    "text": "GitHubCopilotSuggestionProvider"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cthz7qhiyjs0",
+                                                            "created": 1687314905184,
+                                                            "text": "GitHubCopilotSuggestionService",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ctlp76oigw80",
+                                                                    "created": 1687692890798,
+                                                                    "text": "SuggestionService"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "ctlpalt68dc0",
+                                                                            "created": 1687693158824,
+                                                                            "text": "SuggestionServiceType",
+                                                                            "note": "    func getSuggestions(\n        fileURL: URL,\n        content: String,\n        cursorPosition: CursorPosition,\n        tabSize: Int,\n        indentSize: Int,\n        usesTabsForIndentation: Bool,\n        ignoreSpaceOnlySuggestions: Bool\n    ) async throws -> [CodeSuggestion]\n\n\n    func notifyAccepted(_ suggestion: CodeSuggestion) async\n    \n    func notifyRejected(_ suggestions: [CodeSuggestion]) async\n    \n    func notifyOpenTextDocument(fileURL: URL, content: String) async throws\n    \n    func notifyChangeTextDocument(fileURL: URL, content: String) async throws\n    \n    func notifyCloseTextDocument(fileURL: URL) async throws\n    \n    func notifySaveTextDocument(fileURL: URL) async throws\n    \n    func cancelRequest() async\n    \n    func terminate() async"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cthz6xh42c80",
+                                                    "created": 1687314842032,
+                                                    "text": "CodeiumSuggestionProvider"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cthz80o4nm00",
+                                                            "created": 1687314927351,
+                                                            "text": "CodeiumService"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cthzdqgm8uo0",
+                                                    "created": 1687315375314,
+                                                    "text": "OpenAISuggestionProvider (新增)",
+                                                    "background": "#f2dbdb"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cthzdvpq2e00",
+                                                    "created": 1687315386748,
+                                                    "text": "Dify(新增)",
+                                                    "background": "#f2dbdb"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cthzct47fkw0",
+                                    "created": 1687315302730,
+                                    "text": "Language list",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cthzbm2ekko0",
+                                            "created": 1687315209019,
+                                            "text": "SuggestionFeatureDisabledLanguageListView"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cthzd62kxfk0",
+                                            "created": 1687315330930,
+                                            "text": "SuggestionFeatureEnabledProjectListView"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cthz3vu6pew0",
+                            "created": 1687314603377,
+                            "text": "会话 Chat"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cthzanhya400",
+                                    "created": 1687315133772,
+                                    "text": "ChatSettingsView"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctlmmas2qzk0",
+                                    "created": 1687685611854,
+                                    "text": "feature Provider"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctlmmhd38tc0",
+                                            "created": 1687685626185,
+                                            "text": "OpenAi"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ctlmmo650080",
+                                            "created": 1687685641002,
+                                            "text": "Azure OpenAi"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cthz43hug9k0",
+                            "created": 1687314620045,
+                            "text": "Prompt 编程 PromptToCode"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cthzary3q000",
+                                    "created": 1687315143456,
+                                    "text": "PromptToCodeSettingsView"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ctlmn6dmi0g0",
+                                    "created": 1687685680637,
+                                    "text": "Feature Provider"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ctlmna9oa000",
+                                            "created": 1687685689105,
+                                            "text": "建议 Suggestion Feature Provider选中的配置一样"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cthz0xf251c0",
+                    "created": 1687314371723,
+                    "text": "自定义命令行 customCommand"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cthz1jwvvvk0",
+                    "created": 1687314420690,
+                    "text": "高级 Advanced"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-red",
+    "version": "1.4.43"
+}
