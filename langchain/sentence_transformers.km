@@ -1,0 +1,109 @@
+{
+    "root": {
+        "data": {
+            "id": "cuo05uho30o0",
+            "created": 1691583096461,
+            "text": "sentenceTransformers"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cuo06ej4bz40",
+                    "created": 1691583140085,
+                    "text": "安装"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuo06uarm600",
+                            "created": 1691583174408,
+                            "text": "安装sentenceTransformers"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuo07erukb40",
+                                    "created": 1691583218977,
+                                    "text": "环境要求"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuo07lgzftk0",
+                                            "created": 1691583233557,
+                                            "text": "python 3.6+"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuo07plnvh40",
+                                            "created": 1691583242547,
+                                            "text": "pyTorch 1.60+"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuo090hzd740",
+                                            "created": 1691583344633,
+                                            "text": "Transformers 4.6.0+"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuo09sg1de00",
+                                    "created": 1691583405466,
+                                    "text": "安装命令"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuo0bfwgf6o0",
+                                            "created": 1691583534889,
+                                            "text": "conda安装",
+                                            "note": "Conda是一个开源跨平台语言无关的包管理与环境管理系统。由“连续统分析”基于BSD许可证发布。 Conda允许用户方便地安装不同版本的二进制软件包与该计算平台需要的所有库。还允许用户在不同版本的包之间切换、从一个软件仓库下载包并安装。 Conda是用Python语言开发，但能管理其他编程语言的项目，包括多语言项目"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuo0bl40igw0",
+                                                    "created": 1691583546230,
+                                                    "text": "conda install -c conda-forge sentence-transformers"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuo0buda47k0",
+                                            "created": 1691583566381,
+                                            "text": "pip安装"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuo0c1brzdc0",
+                                                    "created": 1691583581528,
+                                                    "text": "pip install -U sentence-transformers"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

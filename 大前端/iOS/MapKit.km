@@ -5,7 +5,8 @@
             "created": 1677859187257,
             "text": "MapKIt",
             "hyperlink": "https://developer.apple.com/documentation/mapkit/mkmaptype",
-            "hyperlinkTitle": "跳转到Apple文档"
+            "hyperlinkTitle": "跳转到Apple文档",
+            "expandState": "expand"
         },
         "children": [
             {
@@ -21,7 +22,7 @@
                             "id": "cqwyebmbvi80",
                             "created": 1677867524292,
                             "text": "自定义地图特征行为",
-                            "expandState": "collapse",
+                            "expandState": "expand",
                             "layout_right_offset": {
                                 "x": 162,
                                 "y": 38
@@ -71,7 +72,7 @@
                                     "id": "cqww2g2bg480",
                                     "created": 1677860951376,
                                     "text": "delegate: MKMapViewDelegate",
-                                    "expandState": "collapse"
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -281,7 +282,7 @@
                                             "id": "cqwwbkes83k0",
                                             "created": 1677861666114,
                                             "text": "拖动注释视图",
-                                            "expandState": "collapse"
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
@@ -299,7 +300,7 @@
                                             "id": "cqwwcsk306o0",
                                             "created": 1677861762213,
                                             "text": "选择注释和注释视图",
-                                            "expandState": "collapse"
+                                            "expandState": "expand"
                                         },
                                         "children": [
                                             {
@@ -341,7 +342,7 @@
                                             "id": "cqwwecricqo0",
                                             "created": 1677861884562,
                                             "text": "管控显示的overlay",
-                                            "expandState": "expand"
+                                            "expandState": "collapse"
                                         },
                                         "children": [
                                             {
@@ -524,7 +525,7 @@
                                     "id": "cqwvgdi4n4w0",
                                     "created": 1677859221790,
                                     "text": " mapType: MKMapType 废弃",
-                                    "expandState": "collapse",
+                                    "expandState": "expand",
                                     "note": "属性。\n即将废弃，使用MKMapConfiguration代替\n"
                                 },
                                 "children": [
@@ -1841,61 +1842,1128 @@
                         "children": [
                             {
                                 "data": {
-                                    "id": "cr0bfz1geq80",
-                                    "created": 1678209007935,
-                                    "text": "annotations: [MKAnnotation]",
-                                    "note": "注释视图信息集合"
+                                    "id": "cr2vpfjsw3s0",
+                                    "created": 1678469291262,
+                                    "text": "注释类型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2vplhbjqo0",
+                                            "created": 1678469304173,
+                                            "text": "MKAnnotation",
+                                            "note": "注释视图的数据模型\ntitle -- 标题\nsubtitle -- 子标题\ncoordinate -- 位置",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr2vqh1vaao0",
+                                                    "created": 1678469372895,
+                                                    "text": "title"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2vqmn81dk0",
+                                                    "created": 1678469385071,
+                                                    "text": "subtitle"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2vqpmkfk00",
+                                                    "created": 1678469391561,
+                                                    "text": "coordinate"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vpsrwxnk0",
+                                            "created": 1678469320051,
+                                            "text": "MKAnnotationView",
+                                            "note": "注释数据模型对应的视图",
+                                            "expandState": "collapse"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr2vt2jgb3s0",
+                                                    "created": 1678469576399,
+                                                    "text": "创建、准备注释视图",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vtbnrlio0",
+                                                            "created": 1678469596251,
+                                                            "text": "init(annotation:reuseIdentifier:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vtew74q00",
+                                                            "created": 1678469603291,
+                                                            "text": "init(coder:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vtjtb3740",
+                                                            "created": 1678469614001,
+                                                            "text": "prepareForReuse()"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vtnv5syg0",
+                                                            "created": 1678469622820,
+                                                            "text": "prepareForDisplay()"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2vtxub3rk0",
+                                                    "created": 1678469644536,
+                                                    "text": "设置显示优先级",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vu67pysg0",
+                                                            "created": 1678469662761,
+                                                            "text": "displayPriority: MKFeatureDisplayPriority ",
+                                                            "expandState": "collapse"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vugpsjqw0",
+                                                                    "created": 1678469685622,
+                                                                    "text": "required"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vulpgf9c0",
+                                                                    "created": 1678469696485,
+                                                                    "text": "defaultHigh"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vuoxol080",
+                                                                    "created": 1678469703513,
+                                                                    "text": "defaultLow"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vv7z62i80",
+                                                            "created": 1678469744962,
+                                                            "text": "zPriority: MKAnnotationViewZPriority",
+                                                            "expandState": "collapse"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vvholmxs0",
+                                                                    "created": 1678469766091,
+                                                                    "text": "defaultSelected"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vvke1uyw0",
+                                                                    "created": 1678469771983,
+                                                                    "text": "defaultUnselected"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vvpr8jxc0",
+                                                                    "created": 1678469783664,
+                                                                    "text": "max"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2vvviwpa00",
+                                                                    "created": 1678469796222,
+                                                                    "text": "min"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vw5xjehc0",
+                                                            "created": 1678469818874,
+                                                            "text": "selectedZPriority: MKAnnotationViewZPriority"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2vx2pz0140",
+                                                    "created": 1678469890250,
+                                                    "text": "读写属性",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vxewk1qo0",
+                                                            "created": 1678469916770,
+                                                            "text": "isEnabled: Bool",
+                                                            "note": "注释模式是否有能选中和点击"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vyakdnnc0",
+                                                            "created": 1678469985691,
+                                                            "text": "image: UIImage?",
+                                                            "note": "注释视图图像"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vyn51u6o0",
+                                                            "created": 1678470013062,
+                                                            "text": "isHighlighted: Bool",
+                                                            "note": "是否高亮"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vyxhei2g0",
+                                                            "created": 1678470035577,
+                                                            "text": "annotation: MKAnnotation?",
+                                                            "note": "注释视图对于的数据模型"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vz91by0g0",
+                                                            "created": 1678470060726,
+                                                            "text": "centerOffset: CGPoint",
+                                                            "note": "中心点偏移"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vzr18ghc0",
+                                                            "created": 1678470099902,
+                                                            "text": "calloutOffset: CGPoint",
+                                                            "note": "唤出视图偏移"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2vzzmt7s00",
+                                                            "created": 1678470118621,
+                                                            "text": "reuseIdentifier: String?",
+                                                            "note": "复用唯一标识"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2w0dt7mjs0",
+                                                    "created": 1678470149483,
+                                                    "text": "管理选中状态",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w0l54il40",
+                                                            "created": 1678470165441,
+                                                            "text": "setSelected(_:animated:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w0r8j2340",
+                                                            "created": 1678470178708,
+                                                            "text": "isSelected: Bool"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2w17qfcdc0",
+                                                    "created": 1678470214618,
+                                                    "text": "管理唤出视图",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w1b9k2hk0",
+                                                            "created": 1678470222305,
+                                                            "text": "canShowCallout: Bool"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w1gyx6rc0",
+                                                            "created": 1678470234723,
+                                                            "text": "leftCalloutAccessoryView: UIView?"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w1qldvs00",
+                                                            "created": 1678470255672,
+                                                            "text": "rightCalloutAccessoryView: UIView? "
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w1x3touw0",
+                                                            "created": 1678470269848,
+                                                            "text": "detailCalloutAccessoryView: UIView?"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w2145ie00",
+                                                            "created": 1678470278575,
+                                                            "text": "leftCalloutOffset: CGPoint"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w25b80uo0",
+                                                            "created": 1678470287710,
+                                                            "text": "rightCalloutOffset: CGPoint"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2w2ct30340",
+                                                    "created": 1678470304027,
+                                                    "text": "支持拖动操作",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w2mfg6g80",
+                                                            "created": 1678470324970,
+                                                            "text": "isDraggable: Bool"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w2ru0oco0",
+                                                            "created": 1678470336735,
+                                                            "text": "setDragState(_:animated:)"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w2xav4ww0",
+                                                            "created": 1678470348638,
+                                                            "text": "dragState: MKAnnotationView.DragState ",
+                                                            "expandState": "collapse"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w5qslelc0",
+                                                                    "created": 1678470569565,
+                                                                    "text": "MKAnnotationViewDragStateNone"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w5tbt06o0",
+                                                                    "created": 1678470575080,
+                                                                    "text": "MKAnnotationViewDragStateStarting"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w5vaj5s80",
+                                                                    "created": 1678470579357,
+                                                                    "text": "MKAnnotationViewDragStateDragging"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w5x54sq80",
+                                                                    "created": 1678470583384,
+                                                                    "text": "MKAnnotationViewDragStateCanceling"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w5z2vw7c0",
+                                                                    "created": 1678470587601,
+                                                                    "text": "MKAnnotationViewDragStateEnding"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2w7imuhzk0",
+                                                    "created": 1678470708531,
+                                                    "text": "注释视图碰撞冲突",
+                                                    "expandState": "collapse"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2w86bnnow0",
+                                                            "created": 1678470760098,
+                                                            "text": "collisionMode: MKAnnotationView.CollisionMode ",
+                                                            "expandState": "collapse"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w8kw7z7s0",
+                                                                    "created": 1678470791816,
+                                                                    "text": "rectangle"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w8pm237k0",
+                                                                    "created": 1678470802085,
+                                                                    "text": "circle"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cr2w8sbs4e80",
+                                                                    "created": 1678470807994,
+                                                                    "text": "none"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2waarwnxc0",
+                                                    "created": 1678470926516,
+                                                    "text": "注释视图聚类",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2waqq5a7s0",
+                                                            "created": 1678470961238,
+                                                            "text": "clusteringIdentifier: String?"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cr2wayi8kgw0",
+                                                            "created": 1678470978174,
+                                                            "text": "cluster: MKAnnotationView?"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2vewvd9z40",
+                                    "created": 1678468466961,
+                                    "text": "地图注释视图",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr0bfz1geq80",
+                                            "created": 1678209007935,
+                                            "text": "annotations: [MKAnnotation]",
+                                            "note": "注释视图信息集合"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0bgibgf0o0",
+                                            "created": 1678209049899,
+                                            "text": "addAnnotation(_:)",
+                                            "note": "添加单个注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0bgtww5vc0",
+                                            "created": 1678209075140,
+                                            "text": "addAnnotations(_:)",
+                                            "note": "添加多个注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0bh8thw2g0",
+                                            "created": 1678209107586,
+                                            "text": "removeAnnotation(_:)",
+                                            "note": "移除单个注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0bhm850io0",
+                                            "created": 1678209136770,
+                                            "text": "removeAnnotations(_:)",
+                                            "note": "移除多个注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr0bi2hgzts0",
+                                            "created": 1678209172162,
+                                            "text": "annotations(in mapRect: MKMapRect) -> Set<AnyHashable>",
+                                            "note": "返回指定区域的注释视图"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2vfjn8hpc0",
+                                    "created": 1678468516535,
+                                    "text": "管理选中集合",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2vfsxb5z40",
+                                            "created": 1678468536735,
+                                            "text": "annotationVisibleRect: CGRect",
+                                            "note": "可见注释视图的坐标"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vgjablm80",
+                                            "created": 1678468594119,
+                                            "text": "selectedAnnotations: [MKAnnotation] ",
+                                            "note": "选中的注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vh9enynk0",
+                                            "created": 1678468650977,
+                                            "text": "selectAnnotation(_:animated:)",
+                                            "note": "选中一个注释点，并且调出视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vhm6x5ao0",
+                                            "created": 1678468678807,
+                                            "text": "deselectAnnotation(_:animated:)",
+                                            "note": "取消选中注释视图，并且隐藏视图"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2vinhrxdk0",
+                                    "created": 1678468760005,
+                                    "text": "创建注释视图集合",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2visd55bc0",
+                                            "created": 1678468770608,
+                                            "text": "register(_:forAnnotationViewWithReuseIdentifier:)",
+                                            "note": "注册要注释的视图集合"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vj7zesoo0",
+                                            "created": 1678468804607,
+                                            "text": "dequeueReusableAnnotationView(withIdentifier:for:)",
+                                            "note": "获取可复用的注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vjoamny80",
+                                            "created": 1678468840113,
+                                            "text": "dequeueReusableAnnotationView(withIdentifier:)",
+                                            "note": "使用唯一表示符获取复用注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vkc6lj140",
+                                            "created": 1678468892113,
+                                            "text": "view(for:)",
+                                            "note": "获取注释点位对应的注释视图"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vku5apu00",
+                                            "created": 1678468931216,
+                                            "text": "let MKMapViewDefaultAnnotationViewReuseIdentifier: String",
+                                            "note": "所有注释视图的默认复用唯一标识符号"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2vobr4lb40",
+                                            "created": 1678469204634,
+                                            "text": "MKMapViewDefaultClusterAnnotationViewReuseIdentifier",
+                                            "note": "特定视图的默认复用标识"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr2we0z5r1c0",
+                            "created": 1678471218643,
+                            "text": "地图叠加层",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 175,
+                                "y": -11
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr2webub8m00",
+                                    "created": 1678471242295,
+                                    "text": "访问叠加层",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2wejpnzio0",
+                                            "created": 1678471259428,
+                                            "text": "overlays: [MKOverlay]"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wepi252w0",
+                                            "created": 1678471272029,
+                                            "text": "overlays(in level: MKOverlayLevel) -> [MKOverlay]",
+                                            "note": "某个Level的叠加层"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wewpgl3s0",
+                                            "created": 1678471287714,
+                                            "text": "renderer(for overlay: MKOverlay) -> MKOverlayRenderer?"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2wffls5sg0",
+                                    "created": 1678471328850,
+                                    "text": "类型",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2wfl1qfs00",
+                                            "created": 1678471340699,
+                                            "text": "MKOverlayLevel"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cr2wfpab4w00",
+                                                    "created": 1678471349924,
+                                                    "text": "aboveRoads"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cr2wfusnfg80",
+                                                    "created": 1678471361917,
+                                                    "text": "aboveLabels"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2wgade4io0",
+                                    "created": 1678471395823,
+                                    "text": "添加和插入叠加层",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2wghdn80g0",
+                                            "created": 1678471411076,
+                                            "text": "addOverlay(_:level:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wglfyim80",
+                                            "created": 1678471419923,
+                                            "text": "addOverlays(_:level:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wgrob9hc0",
+                                            "created": 1678471433489,
+                                            "text": "addOverlay(_:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wgz3ir8g0",
+                                            "created": 1678471449646,
+                                            "text": "addOverlays(_ overlays: [MKOverlay])"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wh4b1nqw0",
+                                            "created": 1678471460985,
+                                            "text": "insertOverlay(_:at:level:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wh9aew5k0",
+                                            "created": 1678471471830,
+                                            "text": "insertOverlay(_:at:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2whefo45k0",
+                                            "created": 1678471483032,
+                                            "text": "insertOverlay(_:above:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2whib952w0",
+                                            "created": 1678471491472,
+                                            "text": "insertOverlay(_:below:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2whlsmdns0",
+                                            "created": 1678471499053,
+                                            "text": "exchangeOverlay(_:with:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2whqmgx400",
+                                            "created": 1678471509565,
+                                            "text": "exchangeOverlay(at:withOverlayAt:)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2whzo2q0g0",
+                                    "created": 1678471529253,
+                                    "text": "移除叠加层",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cr2wi7bdy6o0",
+                                            "created": 1678471545900,
+                                            "text": "removeOverlay(_:)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cr2wiac13mw0",
+                                            "created": 1678471552469,
+                                            "text": "removeOverlays(_:)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr2witv87gw0",
+                            "created": 1678471594989,
+                            "text": "转换地图坐标点",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 157,
+                                "y": 0
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr2wj5cryhc0",
+                                    "created": 1678471619994,
+                                    "text": "convert(_:toPointTo:)"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cr0bgibgf0o0",
-                                    "created": 1678209049899,
-                                    "text": "addAnnotation(_:)",
-                                    "note": "添加单个注释视图"
+                                    "id": "cr2wjcpcrk00",
+                                    "created": 1678471635992,
+                                    "text": "convert(_:toCoordinateFrom:)"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cr0bgtww5vc0",
-                                    "created": 1678209075140,
-                                    "text": "addAnnotations(_:)",
-                                    "note": "添加多个注释视图"
+                                    "id": "cr2wji17q880",
+                                    "created": 1678471647593,
+                                    "text": "convert(_:toRectTo:)"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cr0bh8thw2g0",
-                                    "created": 1678209107586,
-                                    "text": "removeAnnotation(_:)",
-                                    "note": "移除单个注释视图"
+                                    "id": "cr2wjl6im8o0",
+                                    "created": 1678471654444,
+                                    "text": "convert(_:toRegionFrom:)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr2wkrbxqqo0",
+                            "created": 1678471746197,
+                            "text": "调整地图领域和方形",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 127,
+                                "y": 2
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr2wl2egrk00",
+                                    "created": 1678471770294,
+                                    "text": "regionThatFits(_:)"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cr0bhm850io0",
-                                    "created": 1678209136770,
-                                    "text": "removeAnnotations(_:)",
-                                    "note": "移除多个注释视图"
+                                    "id": "cr2wl5ql92o0",
+                                    "created": 1678471777558,
+                                    "text": "mapRectThatFits(_:)"
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cr0bi2hgzts0",
-                                    "created": 1678209172162,
-                                    "text": "annotations(in mapRect: MKMapRect) -> Set<AnyHashable>",
-                                    "note": "返回指定区域的注释视图"
+                                    "id": "cr2wl9hm8f40",
+                                    "created": 1678471785723,
+                                    "text": "mapRectThatFits(_:edgePadding:)"
                                 },
                                 "children": []
                             }
                         ]
                     }
                 ]
+            },
+            {
+                "data": {
+                    "id": "cr2uf3x1bbk0",
+                    "created": 1678465661189,
+                    "text": "MKGeoJSONFeature: NSObject, < MKGeoJSONObject >",
+                    "layout_mind_offset": {
+                        "x": -735,
+                        "y": 50
+                    },
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cr2ug9t6ouw0",
+                            "created": 1678465752381,
+                            "text": "identifier: String?"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2ugcneyio0",
+                            "created": 1678465758563,
+                            "text": "properties: Data?"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2ugf5edlc0",
+                            "created": 1678465764004,
+                            "text": "geometry: [MKShape & MKGeoJSONObject]"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cr2u8natlj40",
+                    "created": 1678465154833,
+                    "text": "MKShape: NSObject, <MKAnnotation>",
+                    "expandState": "collapse",
+                    "note": "coordinate\ntitle\nsubtitle\n\n- (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cr2u7xmmb2w0",
+                            "created": 1678465098950,
+                            "text": "MKMultiPoint: < MKGeoJSONObject >",
+                            "layout_left_offset": {
+                                "x": -203,
+                                "y": 49
+                            },
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cr2ukhdhtg00",
+                                    "created": 1678466082305,
+                                    "text": "pointCount"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2ukmj5ni80",
+                                    "created": 1678466093530,
+                                    "text": "- (void)getCoordinates:(CLLocationCoordinate2D *)coords range:(NSRange)range"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2ukprgrps0",
+                                    "created": 1678466100563,
+                                    "text": "- (CGFloat)locationAtPointIndex:(NSUInteger)index"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cr2uktjoys80",
+                                    "created": 1678466108800,
+                                    "text": "- (NSArray<NSNumber *> *)locationsAtPointIndexes:(NSIndexSet *)indexes"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cr2u7qzsimo0",
+                            "created": 1678465084509,
+                            "text": "MKPointAnnotation: < MKGeoJSONObject >",
+                            "layout_left_offset": {
+                                "x": -168,
+                                "y": -54
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2u89900mw0",
+                            "created": 1678465124248,
+                            "text": "MKPolygon: MKMultiPoint , <MKGeoJSONObject, MKOverlay>",
+                            "layout_left_offset": {
+                                "x": -74,
+                                "y": 148
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2u8718hug0",
+                            "created": 1678465119424,
+                            "text": "MKPolyline: MKMultiPoint, <MKGeoJSONObject, MKOverlay>",
+                            "layout_left_offset": {
+                                "x": -77,
+                                "y": 46
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2u84ocpjs0",
+                            "created": 1678465114292,
+                            "text": "MKMultiPolygon: <MKGeoJSONObject, MKOverlay>",
+                            "layout_left_offset": {
+                                "x": -125,
+                                "y": -62
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cr2u82a1k880",
+                            "created": 1678465109073,
+                            "text": "MKMultiPolyline: < MKGeoJSONObject >",
+                            "layout_left_offset": {
+                                "x": -183,
+                                "y": -165
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cr2wof6qty80",
+                    "created": 1678472033218,
+                    "text": "MKMapItem",
+                    "layout_mind_offset": {
+                        "x": 511,
+                        "y": 22
+                    },
+                    "note": "表示某个点的位置和兴趣数据"
+                },
+                "children": []
             }
         ]
     },
