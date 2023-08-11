@@ -98,12 +98,229 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuon7tb9okg0",
+                            "created": 1691648136154,
+                            "text": "安装GPU/CUDA支持",
+                            "hyperlink": "https://pytorch.org/get-started/locally/",
+                            "hyperlinkTitle": ""
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuon8jvpkmw0",
+                                    "created": 1691648193986,
+                                    "text": "pip3 install torch torchvision torchaudio"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuon5d0smdc0",
+                    "created": 1691647943964,
+                    "text": "快速开始"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuon9alftgg0",
+                            "created": 1691648252138,
+                            "text": "数据向量化嵌入"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuon9tfiynk0",
+                                    "created": 1691648293140,
+                                    "text": "simple/sentence/embeddings.py"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuona93sem00",
+                            "created": 1691648327258,
+                            "text": "向量数据相似度对比"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuonaegf3080",
+                                    "created": 1691648338906,
+                                    "text": "单句对比：simple/sentence/compare.py"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuonavvsh0w0",
+                                    "created": 1691648376841,
+                                    "text": "批量对比：simple/sentence/batchCompare.py"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuonb8xhtm80",
+                            "created": 1691648405242,
+                            "text": "使用已训练好的模型",
+                            "hyperlink": "https://www.sbert.net/docs/pretrained_models.html",
+                            "hyperlinkTitle": "",
+                            "note": "模型位置：~/.cache/torch/sentence_transformers\n模型来源有两种：\n`Sentence Transformers` 和 `Hugging Face Transformers` 都是用于自然语言处理（NLP）的Python库，但它们有一些区别和不同的特点：\n\n1. **目标和主要功能：**\n   - `Hugging Face Transformers` 主要专注于提供各种预训练的Transformer模型，涵盖了包括文本分类、命名实体识别、文本生成、机器翻译等多种NLP任务。它的重点在于提供丰富的预训练模型以及用于Fine-tuning和Inference的工具。\n   - `Sentence Transformers` 则专注于提供用于生成句子嵌入（向量表示）的模型，以支持文本相似性计算、聚类、检索等多种文本相关任务。它的重点在于将文本转换为向量表示，以便进行文本的语义比较和分析。\n\n2. **支持的任务和功能：**\n   - `Hugging Face Transformers` 提供了广泛的预训练模型，适用于各种NLP任务，包括文本分类、序列标注、问答系统、文本生成等。它的模型库非常丰富，涵盖了多个模型架构和多种语言。\n   - `Sentence Transformers` 则主要关注于生成句子嵌入，用于相似性计算和文本检索。它专注于提供用于生成嵌入向量的模型，支持多种预训练的嵌入模型。\n\n3. **API和接口设计：**\n   - `Hugging Face Transformers` 提供了一致的API和接口设计，使得加载和使用不同的预训练模型变得相对简单，同时也提供了大量的文档和示例。\n   - `Sentence Transformers` 也提供了方便的API来生成句子嵌入，但它的主要重点是用于生成嵌入向量，可能在支持的任务范围上相对较窄。\n\n综上所述，`Hugging Face Transformers` 适用于广泛的NLP任务，提供了丰富的预训练模型，而 `Sentence Transformers` 则更专注于文本嵌入和相似性计算。根据你的具体任务和需求，你可以选择适合的库来支持你的工作。"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuoncjwxx7c0",
+                                    "created": 1691648507517,
+                                    "text": "文本预训模型： sentences"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuonkmz5vjs0",
+                                            "created": 1691649141095,
+                                            "text": "simple/sentence/compare2.py",
+                                            "note": "有比较多的模型可供选择"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuond8px7x40",
+                                    "created": 1691648561512,
+                                    "text": "多问答模型：Multi-QA"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuonpvq1yc80",
+                                            "created": 1691649551956,
+                                            "text": "点积相似度算法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuonqqzj13c0",
+                                                    "created": 1691649620009,
+                                                    "text": "multi-qa-MiniLM-L6-doc-v1",
+                                                    "note": "multi-qa-MiniLM-L6-dot-v1： 这个模型使用点积（dot product）作为相似度计算方法。在多问题回答任务中，它会计算每个问题和每个文本段落之间的点积相似度，然后根据相似度来选取最相关的文本段落并生成回答。点积相似度通常用于衡量向量之间的相似性，较高的点积表示向量更相似。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuonr6bzlwg0",
+                                                    "created": 1691649653415,
+                                                    "text": "multi-qa-distilbert-dot-v1"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuonr9z6w6o0",
+                                                    "created": 1691649661348,
+                                                    "text": "multi-qa-mpnet-base-dot-v1"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuonqbx0wjs0",
+                                            "created": 1691649587206,
+                                            "text": "余弦相似度算法"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuonqlxtcd40",
+                                                    "created": 1691649609022,
+                                                    "text": "multi-qa-MiniLM-L6-cos-v1",
+                                                    "note": "multi-qa-MiniLM-L6-cos-v1： 这个模型使用余弦相似度（cosine similarity）作为相似度计算方法。余弦相似度也是衡量向量之间相似性的一种常见方法，它考虑了向量的方向而不仅仅是长度。较高的余弦相似度表示向量的方向更接近。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuonrkfgagw0",
+                                                    "created": 1691649684099,
+                                                    "text": "multi-qa-distilbert-cos-v1"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuonrrfxjns0",
+                                                    "created": 1691649699365,
+                                                    "text": "multi-qa-mpnet-base-cos-v1"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuonf1zin6g0",
+                                    "created": 1691648703583,
+                                    "text": "微软机器阅读理解模型：MSMARCO Passage Models"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuonfoelt7k0",
+                                    "created": 1691648752385,
+                                    "text": "多语言模型：Multi-Lingual Models"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuong8m12940",
+                                    "created": 1691648796369,
+                                    "text": "图像文本模型：Image & Text-Models"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuongii5neo0",
+                                    "created": 1691648817903,
+                                    "text": "其他模型：Other Models"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuonbj60ynk0",
+                            "created": 1691648427526,
+                            "text": "训练自己的模型"
+                        },
+                        "children": []
                     }
                 ]
             }
         ]
     },
-    "template": "default",
+    "template": "right",
     "theme": "fresh-blue",
     "version": "1.4.43"
 }

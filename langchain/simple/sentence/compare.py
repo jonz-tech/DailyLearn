@@ -1,5 +1,6 @@
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer('all-MiniLM-L6-v2')
+# model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('all-mpnet-base-v2')
 
 #Sentences are encoded by calling model.encode()
 emb1 = model.encode("This is a red cat with a hat.")
