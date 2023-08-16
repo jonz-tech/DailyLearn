@@ -1,13 +1,9 @@
 from transformers import AutoTokenizer, AutoModel
 import torch
-import torch.nn.functional as F
 
-#Mean Pooling - Take average of all tokens
-def mean_pooling(model_output, attention_mask):
-    token_embeddings = model_output.last_hidden_state
-    input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
-    return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
-
+#CLS Pooling - Take output from first token
+def cls_pooling(model_output):
+    return model_output.last_hidden_state[:,0]
 
 #Encode text
 def encode(texts):
@@ -19,11 +15,8 @@ def encode(texts):
         model_output = model(**encoded_input, return_dict=True)
 
     # Perform pooling
-    embeddings = mean_pooling(model_output, encoded_input['attention_mask'])
+    embeddings = cls_pooling(model_output)
 
-    # Normalize embeddings
-    embeddings = F.normalize(embeddings, p=2, dim=1)
-    
     return embeddings
 
 
@@ -32,8 +25,8 @@ query = "where is the Great Wall of China？"
 docs = ["the great wall is about 13,171km in china", "London is known for its financial district",'the Great Wall is in beijing']
 
 # Load model from HuggingFace Hub
-tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/multi-qa-MiniLM-L6-cos-v1")
-model = AutoModel.from_pretrained("sentence-transformers/multi-qa-MiniLM-L6-cos-v1")
+tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/msmarco-distilbert-base-tas-b")
+model = AutoModel.from_pretrained("sentence-transformers/msmarco-distilbert-base-tas-b")
 
 #Encode query and docs
 query_emb = encode(query)

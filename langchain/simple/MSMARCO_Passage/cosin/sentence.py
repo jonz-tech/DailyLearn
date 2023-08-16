@@ -4,14 +4,13 @@ query = "where is the Great Wall of China？"
 docs = ["the great wall is about 13,171km in china", "London is known for its financial district",'the Great Wall is in beijing']
 
 #Load the model
-model = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
+model = SentenceTransformer('sentence-transformers/msmarco-MiniLM-L6-cos-v5')
 
 #Encode query and documents
 query_emb = model.encode(query)
 doc_emb = model.encode(docs)
 
 #Compute dot score between query and all document embeddings
-# scores = util.dot_score(query_emb, doc_emb)[0].cpu().tolist()
 scores = util.cos_sim(query_emb, doc_emb)[0].cpu().tolist()
 
 #Combine docs & scores

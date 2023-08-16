@@ -3,76 +3,61 @@
         "data": {
             "id": "cuo05uho30o0",
             "created": 1691583096461,
-            "text": "sentenceTransformers"
+            "text": "sentenceTransformers",
+            "expandState": "expand"
         },
         "children": [
             {
                 "data": {
-                    "id": "cuo06ej4bz40",
-                    "created": 1691583140085,
-                    "text": "安装"
+                    "id": "cutoc56thj40",
+                    "created": 1692159096356,
+                    "text": "预览",
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
                         "data": {
-                            "id": "cuo06uarm600",
-                            "created": 1691583174408,
-                            "text": "安装sentenceTransformers"
+                            "id": "cuo06ej4bz40",
+                            "created": 1691583140085,
+                            "text": "安装",
+                            "expandState": "collapse"
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "cuo07erukb40",
-                                    "created": 1691583218977,
-                                    "text": "环境要求"
+                                    "id": "cuo06uarm600",
+                                    "created": 1691583174408,
+                                    "text": "安装sentenceTransformers"
                                 },
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "cuo07lgzftk0",
-                                            "created": 1691583233557,
-                                            "text": "python 3.6+"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cuo07plnvh40",
-                                            "created": 1691583242547,
-                                            "text": "pyTorch 1.60+"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cuo090hzd740",
-                                            "created": 1691583344633,
-                                            "text": "Transformers 4.6.0+"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cuo09sg1de00",
-                                    "created": 1691583405466,
-                                    "text": "安装命令"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cuo0bfwgf6o0",
-                                            "created": 1691583534889,
-                                            "text": "conda安装",
-                                            "note": "Conda是一个开源跨平台语言无关的包管理与环境管理系统。由“连续统分析”基于BSD许可证发布。 Conda允许用户方便地安装不同版本的二进制软件包与该计算平台需要的所有库。还允许用户在不同版本的包之间切换、从一个软件仓库下载包并安装。 Conda是用Python语言开发，但能管理其他编程语言的项目，包括多语言项目"
+                                            "id": "cuo07erukb40",
+                                            "created": 1691583218977,
+                                            "text": "环境要求"
                                         },
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "cuo0bl40igw0",
-                                                    "created": 1691583546230,
-                                                    "text": "conda install -c conda-forge sentence-transformers"
+                                                    "id": "cuo07lgzftk0",
+                                                    "created": 1691583233557,
+                                                    "text": "python 3.6+"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuo07plnvh40",
+                                                    "created": 1691583242547,
+                                                    "text": "pyTorch 1.60+"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuo090hzd740",
+                                                    "created": 1691583344633,
+                                                    "text": "Transformers 4.6.0+"
                                                 },
                                                 "children": []
                                             }
@@ -80,20 +65,66 @@
                                     },
                                     {
                                         "data": {
-                                            "id": "cuo0buda47k0",
-                                            "created": 1691583566381,
-                                            "text": "pip安装"
+                                            "id": "cuo09sg1de00",
+                                            "created": 1691583405466,
+                                            "text": "安装命令"
                                         },
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "cuo0c1brzdc0",
-                                                    "created": 1691583581528,
-                                                    "text": "pip install -U sentence-transformers"
+                                                    "id": "cuo0bfwgf6o0",
+                                                    "created": 1691583534889,
+                                                    "text": "conda安装",
+                                                    "note": "Conda是一个开源跨平台语言无关的包管理与环境管理系统。由“连续统分析”基于BSD许可证发布。 Conda允许用户方便地安装不同版本的二进制软件包与该计算平台需要的所有库。还允许用户在不同版本的包之间切换、从一个软件仓库下载包并安装。 Conda是用Python语言开发，但能管理其他编程语言的项目，包括多语言项目"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cuo0bl40igw0",
+                                                            "created": 1691583546230,
+                                                            "text": "conda install -c conda-forge sentence-transformers"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuo0buda47k0",
+                                                    "created": 1691583566381,
+                                                    "text": "pip安装"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cuo0c1brzdc0",
+                                                            "created": 1691583581528,
+                                                            "text": "pip install -U sentence-transformers"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuon7tb9okg0",
+                                    "created": 1691648136154,
+                                    "text": "安装GPU/CUDA支持",
+                                    "hyperlink": "https://pytorch.org/get-started/locally/",
+                                    "hyperlinkTitle": ""
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuon8jvpkmw0",
+                                            "created": 1691648193986,
+                                            "text": "pip3 install torch torchvision torchaudio"
+                                        },
+                                        "children": []
                                     }
                                 ]
                             }
@@ -101,69 +132,112 @@
                     },
                     {
                         "data": {
-                            "id": "cuon7tb9okg0",
-                            "created": 1691648136154,
-                            "text": "安装GPU/CUDA支持",
-                            "hyperlink": "https://pytorch.org/get-started/locally/",
-                            "hyperlinkTitle": ""
+                            "id": "cuon5d0smdc0",
+                            "created": 1691647943964,
+                            "text": "快速开始",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
                                 "data": {
-                                    "id": "cuon8jvpkmw0",
-                                    "created": 1691648193986,
-                                    "text": "pip3 install torch torchvision torchaudio"
+                                    "id": "cuon9alftgg0",
+                                    "created": 1691648252138,
+                                    "text": "数据向量化嵌入"
                                 },
-                                "children": []
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "data": {
-                    "id": "cuon5d0smdc0",
-                    "created": 1691647943964,
-                    "text": "快速开始"
-                },
-                "children": [
-                    {
-                        "data": {
-                            "id": "cuon9alftgg0",
-                            "created": 1691648252138,
-                            "text": "数据向量化嵌入"
-                        },
-                        "children": [
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuon9tfiynk0",
+                                            "created": 1691648293140,
+                                            "text": "simple/sentence/embeddings.py"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cutrjsh2ybc0",
+                                                    "created": 1692168158921,
+                                                    "text": "句子嵌入(sentenceEmbeddings)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cutrk3gyplc0",
+                                                    "created": 1692168182859,
+                                                    "text": "文档嵌入(Document Embeddings)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cutrkahnmyg0",
+                                                    "created": 1692168198138,
+                                                    "text": "图像嵌入(ImageEmbeddings)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cutrkdqcbfk0",
+                                                    "created": 1692168205194,
+                                                    "text": "推荐系统中的用户和物品嵌入(User and Item Embeddings in Recommender Systems)"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cutrkhb2yow0",
+                                                    "created": 1692168212978,
+                                                    "text": "序列数据嵌入(Sequence Embeddings)"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
                             {
                                 "data": {
-                                    "id": "cuon9tfiynk0",
-                                    "created": 1691648293140,
-                                    "text": "simple/sentence/embeddings.py"
+                                    "id": "cuona93sem00",
+                                    "created": 1691648327258,
+                                    "text": "向量数据相似度对比"
                                 },
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "cuona93sem00",
-                            "created": 1691648327258,
-                            "text": "向量数据相似度对比"
-                        },
-                        "children": [
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuonaegf3080",
+                                            "created": 1691648338906,
+                                            "text": "单句对比：simple/sentence/compare.py"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuonavvsh0w0",
+                                            "created": 1691648376841,
+                                            "text": "批量对比：simple/sentence/batchCompare.py"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
                             {
                                 "data": {
-                                    "id": "cuonaegf3080",
-                                    "created": 1691648338906,
-                                    "text": "单句对比：simple/sentence/compare.py"
+                                    "id": "cuonbj60ynk0",
+                                    "created": 1691648427526,
+                                    "text": "训练自己的模型",
+                                    "hyperlink": "https://www.sbert.net/docs/training/overview.html",
+                                    "hyperlinkTitle": ""
                                 },
                                 "children": []
                             },
                             {
                                 "data": {
-                                    "id": "cuonavvsh0w0",
-                                    "created": 1691648376841,
-                                    "text": "批量对比：simple/sentence/batchCompare.py"
+                                    "id": "cuto62ryyrs0",
+                                    "created": 1692158620920,
+                                    "text": "预训练模型",
+                                    "hyperlink": "https://www.sbert.net/docs/pretrained_models.html",
+                                    "hyperlinkTitle": ""
                                 },
                                 "children": []
                             }
@@ -176,7 +250,8 @@
                             "text": "使用已训练好的模型",
                             "hyperlink": "https://www.sbert.net/docs/pretrained_models.html",
                             "hyperlinkTitle": "",
-                            "note": "模型位置：~/.cache/torch/sentence_transformers\n模型来源有两种：\n`Sentence Transformers` 和 `Hugging Face Transformers` 都是用于自然语言处理（NLP）的Python库，但它们有一些区别和不同的特点：\n\n1. **目标和主要功能：**\n   - `Hugging Face Transformers` 主要专注于提供各种预训练的Transformer模型，涵盖了包括文本分类、命名实体识别、文本生成、机器翻译等多种NLP任务。它的重点在于提供丰富的预训练模型以及用于Fine-tuning和Inference的工具。\n   - `Sentence Transformers` 则专注于提供用于生成句子嵌入（向量表示）的模型，以支持文本相似性计算、聚类、检索等多种文本相关任务。它的重点在于将文本转换为向量表示，以便进行文本的语义比较和分析。\n\n2. **支持的任务和功能：**\n   - `Hugging Face Transformers` 提供了广泛的预训练模型，适用于各种NLP任务，包括文本分类、序列标注、问答系统、文本生成等。它的模型库非常丰富，涵盖了多个模型架构和多种语言。\n   - `Sentence Transformers` 则主要关注于生成句子嵌入，用于相似性计算和文本检索。它专注于提供用于生成嵌入向量的模型，支持多种预训练的嵌入模型。\n\n3. **API和接口设计：**\n   - `Hugging Face Transformers` 提供了一致的API和接口设计，使得加载和使用不同的预训练模型变得相对简单，同时也提供了大量的文档和示例。\n   - `Sentence Transformers` 也提供了方便的API来生成句子嵌入，但它的主要重点是用于生成嵌入向量，可能在支持的任务范围上相对较窄。\n\n综上所述，`Hugging Face Transformers` 适用于广泛的NLP任务，提供了丰富的预训练模型，而 `Sentence Transformers` 则更专注于文本嵌入和相似性计算。根据你的具体任务和需求，你可以选择适合的库来支持你的工作。"
+                            "note": "模型位置：~/.cache/torch/sentence_transformers\n模型来源有两种：\n`Sentence Transformers` 和 `Hugging Face Transformers` 都是用于自然语言处理（NLP）的Python库，但它们有一些区别和不同的特点：\n\n1. **目标和主要功能：**\n   - `Hugging Face Transformers` 主要专注于提供各种预训练的Transformer模型，涵盖了包括文本分类、命名实体识别、文本生成、机器翻译等多种NLP任务。它的重点在于提供丰富的预训练模型以及用于Fine-tuning和Inference的工具。\n   - `Sentence Transformers` 则专注于提供用于生成句子嵌入（向量表示）的模型，以支持文本相似性计算、聚类、检索等多种文本相关任务。它的重点在于将文本转换为向量表示，以便进行文本的语义比较和分析。\n\n2. **支持的任务和功能：**\n   - `Hugging Face Transformers` 提供了广泛的预训练模型，适用于各种NLP任务，包括文本分类、序列标注、问答系统、文本生成等。它的模型库非常丰富，涵盖了多个模型架构和多种语言。\n   - `Sentence Transformers` 则主要关注于生成句子嵌入，用于相似性计算和文本检索。它专注于提供用于生成嵌入向量的模型，支持多种预训练的嵌入模型。\n\n3. **API和接口设计：**\n   - `Hugging Face Transformers` 提供了一致的API和接口设计，使得加载和使用不同的预训练模型变得相对简单，同时也提供了大量的文档和示例。\n   - `Sentence Transformers` 也提供了方便的API来生成句子嵌入，但它的主要重点是用于生成嵌入向量，可能在支持的任务范围上相对较窄。\n\n综上所述，`Hugging Face Transformers` 适用于广泛的NLP任务，提供了丰富的预训练模型，而 `Sentence Transformers` 则更专注于文本嵌入和相似性计算。根据你的具体任务和需求，你可以选择适合的库来支持你的工作。",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -310,9 +385,430 @@
                     },
                     {
                         "data": {
-                            "id": "cuonbj60ynk0",
-                            "created": 1691648427526,
-                            "text": "训练自己的模型"
+                            "id": "cuto6h1ob3c0",
+                            "created": 1692158651981,
+                            "text": "预训练的跨模态编码器",
+                            "hyperlink": "https://www.sbert.net/docs/pretrained_cross-encoders.html",
+                            "hyperlinkTitle": ""
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuto7j6ep0o0",
+                                    "created": 1692158734985,
+                                    "text": "MS MARCO"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto7mr4nt40",
+                                    "created": 1692158742769,
+                                    "text": "SQuAD (QNLI)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto7r0xtcw0",
+                                    "created": 1692158752069,
+                                    "text": "STSbenchmark"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto7vsolcw0",
+                                    "created": 1692158762454,
+                                    "text": "Quora Duplicate Questions"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto8027uf40",
+                                    "created": 1692158771737,
+                                    "text": "NLI"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuto94lgwe80",
+                            "created": 1692158859973,
+                            "text": "文献"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuto97o0hs80",
+                            "created": 1692158866657,
+                            "text": "huggingface"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuto9n2n1k80",
+                                    "created": 1692158900193,
+                                    "text": "The Hugging Face Hub"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto9rzzclc0",
+                                    "created": 1692158910916,
+                                    "text": "Using Hugging Face models"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuto9wq8cvc0",
+                                    "created": 1692158921210,
+                                    "text": "Sharing your models"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cutoa1o1clc0",
+                                    "created": 1692158931962,
+                                    "text": "Sharing your embeddings"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cutocjvpzc80",
+                    "created": 1692159128337,
+                    "text": "功能",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cutohyadq8w0",
+                            "created": 1692159551519,
+                            "text": "计算句子嵌入向量值",
+                            "note": " "
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuts4d3xedc0",
+                                    "created": 1692169771122,
+                                    "text": "模型加载：SentenceTransformer('all-MiniLM-L6-v2')",
+                                    "note": "class sentence_transformers.SentenceTransformer(\nmodel_name_or_path: Optional[str] = None, \nmodules:Optional[Iterable[torch.nn.modules.module.Module]] = None, \ndevice: Optional[str] = None,\ncache_folder: Optional[str] = None,\nuse_auth_token: Optional[Union[bool, str]] = None)\n/*\nParameters\nmodel_name_or_path – If it is a filepath on disc, it loads the model from that path. If it is not a path, it first tries to download a pre-trained SentenceTransformer model. If that fails, tries to construct a model from Huggingface models repository with that name.\n\nmodules – This parameter can be used to create custom SentenceTransformer models from scratch.\n\ndevice – Device (like ‘cuda’ / ‘cpu’) that should be used for computation. If None, checks if a GPU can be used.\n\ncache_folder – Path to store models\n\nuse_auth_token – HuggingFace authentication token to download private models.\n*/"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuts5bqkm880",
+                                    "created": 1692169846502,
+                                    "text": "计算嵌入向量：embeddings = model.encode(sentences)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuts6gp1v4w0",
+                                    "created": 1692169935659,
+                                    "text": "文本长度限制：model.max_seq_length",
+                                    "note": "`model.max_seq_length` 是一个属性，通常在使用预训练的模型进行文本处理时会涉及到。它表示模型所能处理的最大序列长度。\n\n在自然语言处理中，文本数据通常会被分成一个个的单词或子词，形成一个序列。由于计算资源和模型的设计限制，模型对于输入序列的长度可能会有限制。`model.max_seq_length` 就是模型所能处理的最大序列长度的属性。\n\n例如，当您使用一个预训练的文本分类模型时，如果输入的文本序列超过了模型的 `max_seq_length`，您可能需要对文本进行截断或其他处理，以使其符合模型的输入要求。\n\n需要注意的是，不同的预训练模型可能具有不同的 `max_seq_length`，因此在使用模型时需要查阅相应的文档或属性来了解该模型所支持的最大序列长度。"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cutsbk6hef40",
+                                    "created": 1692170335063,
+                                    "text": "使用pickle磁盘存取嵌入向量："
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cutsbqcn4qo0",
+                                            "created": 1692170348496,
+                                            "text": "存：pickle.dump({'sentences': sentences, 'embeddings': embeddings}, fOut, protocol=pickle.HIGHEST_PROTOCOL)",
+                                            "note": "from sentence_transformers import SentenceTransformer\nimport pickle\n\nmodel = SentenceTransformer('all-MiniLM-L6-v2')\nsentences = ['This framework generates embeddings for each input sentence',\n    'Sentences are passed as a list of string.', \n    'The quick brown fox jumps over the lazy dog.']\n\n\nembeddings = model.encode(sentences)\n\n#Store sentences & embeddings on disc\nwith open('embeddings.pkl', \"wb\") as fOut:\n    pickle.dump({'sentences': sentences, 'embeddings': embeddings}, fOut, protocol=pickle.HIGHEST_PROTOCOL)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cutscbnrvls0",
+                                            "created": 1692170394882,
+                                            "text": "取：stored_data = pickle.load(fIn)",
+                                            "note": "from sentence_transformers import SentenceTransformer\nimport pickle\n#Load sentences & embeddings from disc\nwith open('embeddings.pkl', \"rb\") as fIn:\n    stored_data = pickle.load(fIn)\n    stored_sentences = stored_data['sentences']\n    stored_embeddings = stored_data['embeddings']"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cutoi29phqg0",
+                            "created": 1692159560185,
+                            "text": "Semantic Textual Similarity"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoi6pqveg0",
+                            "created": 1692159569862,
+                            "text": "Semantic Search"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoid5j0ko0",
+                            "created": 1692159583877,
+                            "text": "Retrieve & Re-Rank"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoihmrifc0",
+                            "created": 1692159593626,
+                            "text": "Clustering"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoiljcg9c0",
+                            "created": 1692159602127,
+                            "text": "Paraphrase Mining"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoiqcqei00",
+                            "created": 1692159612611,
+                            "text": "Translated Sentence Mining"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoiv8dgsw0",
+                            "created": 1692159623231,
+                            "text": "Cross-Encoders"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoiz9sr6o0",
+                            "created": 1692159632025,
+                            "text": "Image Search"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cutocncwpyo0",
+                    "created": 1692159135906,
+                    "text": "训练",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cutoh911t1k0",
+                            "created": 1692159496535,
+                            "text": "Training Overview"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutohda47m80",
+                            "created": 1692159505790,
+                            "text": "Multilingual-Models"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutohhbm0bk0",
+                            "created": 1692159514588,
+                            "text": "Model Distillation"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutohl0zx280",
+                            "created": 1692159522653,
+                            "text": "Cross-Encoders"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutohpvkw600",
+                            "created": 1692159533210,
+                            "text": "Augmented SBERT"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cutocsdhoqo0",
+                    "created": 1692159146825,
+                    "text": "训练例子",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cutogitjapc0",
+                            "created": 1692159439484,
+                            "text": "Semantic Textual Similarity"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutognhgauo0",
+                            "created": 1692159449638,
+                            "text": "Natural Language Inference"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutogradbx40",
+                            "created": 1692159457917,
+                            "text": "Paraphrase Data"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutogvf84m80",
+                            "created": 1692159466917,
+                            "text": "Quora Duplicate Questions"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutogzkp8so0",
+                            "created": 1692159475955,
+                            "text": "MS MARCO"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cutod470ty80",
+                    "created": 1692159172556,
+                    "text": "无监督学习",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cutofazz7vk0",
+                            "created": 1692159344096,
+                            "text": "Unsupervised Learning"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutofi246e80",
+                            "created": 1692159359462,
+                            "text": "领域自适应（Domain Adaptation）"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cutodvegqw00",
+                    "created": 1692159231779,
+                    "text": "软件包参考",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cutoeabcgu00",
+                            "created": 1692159264242,
+                            "text": "SentenceTransformer"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoeei45w00",
+                            "created": 1692159273358,
+                            "text": "util"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoeihgp000",
+                            "created": 1692159282026,
+                            "text": "Models"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoemc5c5c0",
+                            "created": 1692159290412,
+                            "text": "Losses"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoes72gqo0",
+                            "created": 1692159303165,
+                            "text": "Evaluation"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutoevyw4eg0",
+                            "created": 1692159311378,
+                            "text": "Datasets"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cutof0mr2ow0",
+                            "created": 1692159321528,
+                            "text": "cross_encoder"
                         },
                         "children": []
                     }
