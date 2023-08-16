@@ -553,6 +553,62 @@
                                         "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cutsi9yqvw80",
+                                    "created": 1692170861376,
+                                    "text": "文本多处理器编码"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cutsj4j27go0",
+                                            "created": 1692170927908,
+                                            "text": "gpu:  SentenceTransformer.start_multi_process_pool(target_devices: Optional[List[str]] = None)",
+                                            "note": "Starts multi process to process the encoding with several, independent processes. This method is recommended if you want to encode on multiple GPUs. It is advised to start only one process per GPU. This method works together with encode_multi_process\n\nParameters\ntarget_devices – PyTorch target devices, e.g. cuda:0, cuda:1… If None, all available CUDA devices will be used\n\nReturns\nReturns a dict with the target processes, an input queue and and output queue."
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cutsj6sm1og0",
+                                            "created": 1692170932839,
+                                            "text": "cpu"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cutsr3o4nj40",
+                                    "created": 1692171552951,
+                                    "text": "预训练模型",
+                                    "note": "大多数的模型都是在sentence-transformers上：https://huggingface.co/docs/transformers/index\n我们也可以在不安装sentence-transformers的情况下，加载hugginface仓库上的预训练模型：https://huggingface.co/models"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cutst1dncmw0",
+                                            "created": 1692171704692,
+                                            "text": "直接使用Huggingface",
+                                            "hyperlink": "https://huggingface.co/models",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cutst417cuo0",
+                                            "created": 1692171710470,
+                                            "text": "安装了sentence-transformers",
+                                            "hyperlink": "https://huggingface.co/docs/transformers/index",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -560,9 +616,26 @@
                         "data": {
                             "id": "cutoi29phqg0",
                             "created": 1692159560185,
-                            "text": "Semantic Textual Similarity"
+                            "text": "文本语义相似性（Semantic Textual Similarity）"
                         },
-                        "children": []
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cutxwdhvqeg0",
+                                    "created": 1692186071712,
+                                    "text": "cosine_scores = util.cos_sim(embeddings1, embeddings2)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cutxxnp9og80",
+                                    "created": 1692186172290,
+                                    "text": "scores = util.dot_score(query_emb, doc_emb)[0].cpu().tolist()"
+                                },
+                                "children": []
+                            }
+                        ]
                     },
                     {
                         "data": {
