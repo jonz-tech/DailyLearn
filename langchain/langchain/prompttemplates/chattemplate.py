@@ -11,6 +11,16 @@ from langchain.schema import (
     SystemMessage
 )
 
+#LLMs promot template
+
+from langchain.prompts import PromptTemplate
+
+prompt = PromptTemplate.from_template("What is a good name for a company that makes {product}?")
+prompt.format(product="colorful socks")
+
+
+
+#chat models
 template="You are a helpful assistant that translates {input_language} to {output_language}."
 system_message_prompt = SystemMessagePromptTemplate.from_template(template)
 human_template="{text}"
