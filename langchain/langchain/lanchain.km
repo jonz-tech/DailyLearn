@@ -1,0 +1,783 @@
+{
+    "root": {
+        "data": {
+            "id": "cux2jr93o0w0",
+            "created": 1692503868341,
+            "text": "Langchain"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cux2kfx84tk0",
+                    "created": 1692503922043,
+                    "text": "入门get started",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cux2nkklq4o0",
+                            "created": 1692504167256,
+                            "text": "介绍 Introduction",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cux2o5e2v600",
+                                    "created": 1692504212574,
+                                    "text": "功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cux2o9fpuu00",
+                                            "created": 1692504221380,
+                                            "text": "数据感知 Data-aware： 将语言模型与其他数据源连接起来"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cux2ovbb82w0",
+                                            "created": 1692504269003,
+                                            "text": "模型互动性 Agentic: 允许语言模型与其环境进行交互"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cux2pq9kfhk0",
+                                    "created": 1692504336377,
+                                    "text": "价值"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cux2pxpp9yo0",
+                                            "created": 1692504352590,
+                                            "text": "组件功能：用于处理语言模型的抽象，以及每个抽象的一系列实现。无论您是否使用 LangChain 框架的其他部分，组件都是模块化且易于使用的"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cux2q5y8xig0",
+                                            "created": 1692504370521,
+                                            "text": "链式组合：用于完成特定高级任务的结构化组件组装"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuy2wbd4voo0",
+                                    "created": 1692606412447,
+                                    "text": "模块Modules",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuy2wllrr000",
+                                            "created": 1692606434737,
+                                            "text": "模型输入/输出 (Model I/O):与语言模型进行接口交互"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2wyz6zs00",
+                                            "created": 1692606463847,
+                                            "text": "数据连接 (Data connection):与特定于应用程序的数据进行接口交互"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2x4qiaxs0",
+                                            "created": 1692606476383,
+                                            "text": "链式组装 (Chains):构造调用序列"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2xesos6g0",
+                                            "created": 1692606498282,
+                                            "text": "代理 (Agents):根据高级指令让链式组装选择要使用的工具"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2xne8ycw0",
+                                            "created": 1692606517000,
+                                            "text": "内存 (Memory):在链式组装的多次运行之间持久化应用程序状态"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2xuybf2g0",
+                                            "created": 1692606533451,
+                                            "text": "回调 (Callbacks):记录和流式传输任何链式组装的中间步骤"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cux2nu1jh7c0",
+                            "created": 1692504187871,
+                            "text": "入门",
+                            "expandState": "collapse",
+                            "layout_right_offset": {
+                                "x": 1,
+                                "y": 52
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cux7zch0ek80",
+                                    "created": 1692519195544,
+                                    "text": "环境设置：使用 LangChain 通常需要与一个或多个模型提供者、数据存储、API 等集成",
+                                    "layout_right_offset": {
+                                        "x": 178.24999856576312,
+                                        "y": 74.74999882653356
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cux2nr89w880",
+                                    "created": 1692504181748,
+                                    "text": "安装",
+                                    "layout_right_offset": {
+                                        "x": 174.24999834224582,
+                                        "y": -362.7500006891787
+                                    },
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cux2ruq4b9c0",
+                                            "created": 1692504502814,
+                                            "text": "Pip安装",
+                                            "layout_right_offset": {
+                                                "x": 118,
+                                                "y": 41
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cux2sw2c6zk0",
+                                                    "created": 1692504584094,
+                                                    "text": "最低依赖安装：pip install langchain"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux2ta1tzk00",
+                                                    "created": 1692504614538,
+                                                    "text": "常见LLM安装：pip install langchain[llms]"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux2tjz2oyg0",
+                                                    "created": 1692504636139,
+                                                    "text": "所有模块安装：pip install langchain[all]"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux2ui0qm1k0",
+                                                    "created": 1692504710250,
+                                                    "text": "源码安装：pip install -e ."
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux2tu7d29k0",
+                                                    "created": 1692504658408,
+                                                    "text": "如果是zsh终端（加单引号）：pip install 'langchain[all]'"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cux2s2nx2wg0",
+                                            "created": 1692504520095,
+                                            "text": "Conda安装",
+                                            "layout_right_offset": {
+                                                "x": -3,
+                                                "y": 28
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cux2vi602fc0",
+                                                    "created": 1692504788933,
+                                                    "text": " conda install langchain -c conda-forge "
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cux81yzsxc00",
+                                    "created": 1692519401298,
+                                    "text": "构建应用程序：LLMChain",
+                                    "note": "LangChain 提供了许多可以用于构建语言模型应用程序的模块。这些模块可以作为简单应用程序中的独立模块使用，也可以组合在一起用于更复杂的用例",
+                                    "expandState": "collapse",
+                                    "layout_right_offset": {
+                                        "x": 152.4999977275728,
+                                        "y": -92.49999862164253
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cux8jm6ad9c0",
+                                            "created": 1692520783946,
+                                            "text": "消息ChatMessage：接受一个任意的角色参数",
+                                            "layout_right_offset": {
+                                                "x": 64,
+                                                "y": 219
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuxvyawc7ag0",
+                                                    "created": 1692586820391,
+                                                    "text": "content： 消息内容"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuxvyduf2ds0",
+                                                    "created": 1692586826805,
+                                                    "text": "role：消息记录的来源"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuxvzx3h5140",
+                                            "created": 1692586947076,
+                                            "text": "消息类型：",
+                                            "expandState": "expand",
+                                            "layout_right_offset": {
+                                                "x": 69,
+                                                "y": 219
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cux8jted3ns0",
+                                                    "created": 1692520799672,
+                                                    "text": "AIMessage： 来自AI/助手的消息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux8jfav4400",
+                                                    "created": 1692520768986,
+                                                    "text": "HumanMessage： 来自human/user的消息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux8jjg1iog0",
+                                                    "created": 1692520778006,
+                                                    "text": "SystemMessage： 来自系统的消息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuxw074kcqg0",
+                                                    "created": 1692586968909,
+                                                    "text": "functionMessage: 来自函数的消息"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuxw3j0w3ew0",
+                                                    "created": 1692587229901,
+                                                    "text": "ChatMessage: 如果上面的消息类型都不匹配，可以使用此消息类型"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuxw5p48ycw0",
+                                            "created": 1692587399893,
+                                            "text": "核心组成",
+                                            "expandState": "expand",
+                                            "layout_right_offset": {
+                                                "x": 68,
+                                                "y": -421
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cux8h1qajzk0",
+                                                    "created": 1692520582715,
+                                                    "text": "LLMs：大语言模型，是获取预测结果的核心模块",
+                                                    "note": "LangChain 的基本构建模块是 LLM，它接受文本并生成更多的文本。",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux91vjcqpc0",
+                                                    "created": 1692522214882,
+                                                    "text": "Prompt Template：大语言模型的指导，它控制了大预言模型的输出。所以理解如何编写模版和工作至关重昂要"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cux93gfiqjc0",
+                                                    "created": 1692522338727,
+                                                    "text": "output Parsers: 让大预言模型以更可操作的方式返回响应内容。"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuxwc7m821k0",
+                                            "created": 1692587910347,
+                                            "text": "互动交互标准",
+                                            "layout_right_offset": {
+                                                "x": 84,
+                                                "y": -422
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuxwcdqqpe00",
+                                                    "created": 1692587923681,
+                                                    "text": "predict：获取一个字符串输入，响应返回一个字符串"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuxwctadnow0",
+                                                    "created": 1692587957520,
+                                                    "text": "predict_messages： 获取一组消息，响应返回一个消息"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cux8y6h5rog0",
+                                    "created": 1692521925238,
+                                    "text": "提示词模版",
+                                    "note": "大多数 LLM 应用程序不会直接将用户输入传递给 LLM。通常，它们会将用户输入添加到一个更大的文本片段中，称为提示模板，在特定任务上提供额外的上下文。",
+                                    "layout_right_offset": {
+                                        "x": 161.24999759718776,
+                                        "y": -18.749999720603228
+                                    },
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuy265rdf1c0",
+                                            "created": 1692604362779,
+                                            "text": "概念：通常用户的输入，并不会直接交到大模型中。我们通常会在用户输入的基础上，加入一些功能性描述，再将这个文本块交给大模型。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuy2m9j8l940",
+                                    "created": 1692605624821,
+                                    "text": "输出解析器 output Parsers",
+                                    "layout_right_offset": {
+                                        "x": 139.9999979138372,
+                                        "y": 16.249999757856187
+                                    },
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuy2mq2chsw0",
+                                            "created": 1692605660805,
+                                            "text": "txt -> structured information eg Json"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2n8m10eo0",
+                                            "created": 1692605701177,
+                                            "text": "chatMessage -> string"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy2pngffu00",
+                                            "created": 1692605890219,
+                                            "text": "函数返回值作为消息体"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuy2qwvr9t40",
+                                    "created": 1692605989101,
+                                    "text": "链式组合： 提示词模板+输出解析器组合",
+                                    "layout_right_offset": {
+                                        "x": 97.49999854713701,
+                                        "y": 36.249999459832964
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cux2kqhscds0",
+                    "created": 1692503945054,
+                    "text": "模块modules"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuy2wllrr000",
+                            "created": 1692606434737,
+                            "text": "模型输入/输出 (Model I/O):与语言模型进行接口交互"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuy4o2xyiqo0",
+                                    "created": 1692611409422,
+                                    "text": "i/o模型",
+                                    "expandState": "expand",
+                                    "image": "https://python.langchain.com/assets/images/model_io-1f23a36233d7731e93576d6885da2750.jpg",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 76
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuy4fpzy4u00",
+                                            "created": 1692610754331,
+                                            "text": "Prompts: 模版、动态选择等用于管理模型输入"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy4fukj5uo0",
+                                            "created": 1692610764282,
+                                            "text": "language models: 大语言模型提供通用接口"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy4g01i8dk0",
+                                            "created": 1692610776193,
+                                            "text": "output parsers: 生成模型响应信息"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cuy4qwpzq5s0",
+                                    "created": 1692611630972,
+                                    "text": "提示词Prompts"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cuy4rbl2hgg0",
+                                            "created": 1692611663326,
+                                            "text": "提示词模板prompt templates"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cuy56x3izy00",
+                                                    "created": 1692612885617,
+                                                    "text": "模板",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cuy4vdmykmg0",
+                                                            "created": 1692611981251,
+                                                            "text": "PromptTemplate： 代码lc06"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cuy4vm11wao0",
+                                                            "created": 1692611999517,
+                                                            "text": "ChatModelTemplate:  代码lc07"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy574tmwtk0",
+                                                    "created": 1692612902433,
+                                                    "text": "连接到特征存储Feature stores",
+                                                    "note": "特征存储（Feature Stores）是一种数据管理系统，用于有效地管理、组织和共享在机器学习和数据科学项目中使用的特征（features）。特征在这里是指用于训练机器学习模型或进行数据分析的输入数据的属性或字段。\n\n特征存储的目标是提供一个中心化的、可扩展的平台，以便团队中的不同成员可以方便地访问、发现、共享和重用特征。这在数据驱动的项目中非常有价值，因为特征通常需要经过多次处理、变换和组合，这样的平台可以确保特征的一致性和可复用性。\n\n特征存储通常包含以下功能：\n\n1. **特征管理：** 特征存储允许您定义和管理各种特征。这包括特征的名称、类型、元数据和变换逻辑。\n\n2. **特征版本控制：** 特征存储可以记录每个特征的版本历史，以便您可以追踪特征的变化并回溯到之前的版本。\n\n3. **特征计算和变换：** 特征存储通常支持特征的计算和变换，使您能够将原始数据转换为适合训练模型的特征。\n\n4. **元数据和文档：** 特征存储可以包含特征的元数据和文档，帮助团队成员理解每个特征的含义和用途。\n\n5. **访问控制和安全性：** 特征存储提供了访问控制功能，确保只有授权的用户能够访问和修改特征。\n\n6. **扩展性和性能：** 特征存储需要具备高度的可扩展性，以便处理大量特征数据，并提供快速的访问性能。\n\n特征存储的目标是在机器学习和数据科学项目中促进协作、提高效率，并减少重复工作。它们可以与数据湖、数据仓库和机器学习平台集成，从而为数据科学团队提供更好的工作流程和资源管理。"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy57i2h7hc0",
+                                                    "created": 1692612931266,
+                                                    "text": "自定义提示词模版Custom prompt template"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5882d16g0",
+                                                    "created": 1692612987855,
+                                                    "text": "少样本提示模板Few-shot prompt templates"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy58mt059k0",
+                                                    "created": 1692613019941,
+                                                    "text": "会话模型少样本提示模版Few shot examples for chat models"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy59kooo540",
+                                                    "created": 1692613093691,
+                                                    "text": "格式化目标输出Format template output"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy59w9pfvk0",
+                                                    "created": 1692613118906,
+                                                    "text": "模板格式化Template Formats"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5akztjfk0",
+                                                    "created": 1692613172728,
+                                                    "text": "消息提示词模板 type of MessagePromptTemplate"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5bfn91iw0",
+                                                    "created": 1692613239448,
+                                                    "text": "部分提示词模版 Partial prompt templates"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5bqpmu5c0",
+                                                    "created": 1692613263537,
+                                                    "text": "组合Composition"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5bx1owi80",
+                                                    "created": 1692613277327,
+                                                    "text": "序列化Serialization"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5cqrddpc0",
+                                                    "created": 1692613342006,
+                                                    "text": "管道提示词Prompt Pipelining"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cuy5dc75lcg0",
+                                                    "created": 1692613388673,
+                                                    "text": "验证模板Validate template"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cuy4rjoc8f40",
+                                            "created": 1692611680938,
+                                            "text": "示例选择器example selectors"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuy2wyz6zs00",
+                            "created": 1692606463847,
+                            "text": "数据连接 (Data connection):与特定于应用程序的数据进行接口交互"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuy2x4qiaxs0",
+                            "created": 1692606476383,
+                            "text": "链式组装 (Chains):构造调用序列"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuy2xesos6g0",
+                            "created": 1692606498282,
+                            "text": "代理 (Agents):根据高级指令让链式组装选择要使用的工具"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuy2xne8ycw0",
+                            "created": 1692606517000,
+                            "text": "内存 (Memory):在链式组装的多次运行之间持久化应用程序状态"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuy2xuybf2g0",
+                            "created": 1692606533451,
+                            "text": "回调 (Callbacks):记录和流式传输任何链式组装的中间步骤"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cux2l0uqjfk0",
+                    "created": 1692503967604,
+                    "text": "用例 Use cases"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cux2l7h3z1s0",
+                    "created": 1692503982018,
+                    "text": "指南Guides"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cux2lewgyrs0",
+                    "created": 1692503998184,
+                    "text": "生态Ecosystem"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cux2lndt3rs0",
+                    "created": 1692504016647,
+                    "text": "资源Additional resource"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cux2lv77m5s0",
+                    "created": 1692504033662,
+                    "text": "API 参考"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-red",
+    "version": "1.4.43"
+}
