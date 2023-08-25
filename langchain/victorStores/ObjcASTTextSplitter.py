@@ -23,19 +23,19 @@ class ObjcTextSplitter(object):
         self.resetVar()
 
     def resetVar(self):
-        self.v_filepath = None
-        self.v_fileContent = None
+        self.filepath = None
+        self.fileContent = None
         self.filebasename = None
-        self.v_textSplitter = []
+        self.textTrunks = []
 
     def __clangTextFile__(self, filepath=''):
         self.resetVar()
         if filepath == '':
             return
-        self.v_filepath = filepath
-        self.filebasename = os.path.basename(self.v_filepath)
-        with open(self.v_filepath, 'r') as file:
-            self.v_fileContent = file.read()  # 读取文件内容
+        self.filepath = filepath
+        self.filebasename = os.path.basename(self.filepath)
+        with open(self.filepath, 'r') as file:
+            self.fileContent = file.read()  # 读取文件内容
             file.close()
 
     def deduplicationData(self, arrays=[]):
@@ -51,29 +51,29 @@ class ObjcTextSplitter(object):
 
         
 
-    def textSplit(self,filepath=''):
+    def getTextTrunck(self,filepath=''):
         self.__clangTextFile__(filepath)
 
-        if len(self.v_filepath) <= 0:
-            return self.v_textSplitter
+        if len(self.filepath) <= 0:
+            return self.textTrunks
 
-        if len(self.v_fileContent) <= 0:
-            return self.v_textSplitter
+        if len(self.fileContent) <= 0:
+            return self.textTrunks
 
         index = clang.cindex.Index.create()
-        translation_unit = index.parse(self.v_filepath, args=['-x', 'objective-c', '-fobjc-arc'])
+        translation_unit = index.parse(self.filepath, args=['-x', 'objective-c', '-fobjc-arc'])
 
         if not translation_unit:
             print("Failed to parse the file.")
-            return self.v_textSplitter
+            return self.textTrunks
 
-        self.v_textSplitter.extend(self.traverse(translation_unit.cursor))
+        self.textTrunks.extend(self.traverse(translation_unit.cursor))
         # 去重 
-        # count1 = len(self.v_fileContent)
-        rn = self.deduplicationData(arrays=self.v_textSplitter)
-        self.v_textSplitter = []
-        self.v_textSplitter.extend(rn)
-        # count2 = len(self.v_fileContent)
+        # count1 = len(self.fileContent)
+        rn = self.deduplicationData(arrays=self.textTrunks)
+        self.textTrunks = []
+        self.textTrunks.extend(rn)
+        # count2 = len(self.fileContent)
 
         # print(f'count1:{count1} count2:{count2} \n'))
         return rn
@@ -89,7 +89,7 @@ class ObjcTextSplitter(object):
             startcloumn = node.extent.start.column
             endline = node.extent.end.line
             endcloumn = node.extent.end.column
-            lines = self.v_fileContent.splitlines()
+            lines = self.fileContent.splitlines()
             # if node.kind == CursorKind.OBJC_INSTANCE_METHOD_DECL:
             #     print(f'{source_text}')
             # if node.raw_comment is not None: # 如果有注释
@@ -104,7 +104,7 @@ class ObjcTextSplitter(object):
             # print(f'[{self.filebasename}][{startline}:{endline}][{class_protocal}]\n{source_text}\n')
             node_meta = ObjecTextMeta()
             node_meta.basefilename = self.filebasename
-            node_meta.filepath = self.v_filepath
+            node_meta.filepath = self.filepath
             node_meta.codeRage = f'[{startline}:{endline}]'
             node_meta.codeContent = source_text
             node_meta.raw_comments = node.raw_comment

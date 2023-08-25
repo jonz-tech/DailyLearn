@@ -4,7 +4,7 @@ from langchain.vectorstores import Chroma
 from sentence_transformers import SentenceTransformer
 from langchain.embeddings.openai import OpenAIEmbeddings
 import chromadb
-from ObjcClangTextSplitter import ObjcTextSplitter,ObjecTextMeta
+from ObjcASTTextSplitter import ObjcTextSplitter,ObjecTextMeta
 
 sourcefilepath = '/Users/yy.inc/Downloads/AuthSDK.h'
 
@@ -35,7 +35,7 @@ except ValueError:
     ids =list()
 
     instance = ObjcTextSplitter()
-    documents = instance.textSplit(sourcefilepath)
+    documents = instance.getTextTrunck(sourcefilepath)
     for index,element in enumerate(documents):
         ids.append(f'{index}')
         kind = element.codekind if element.codekind is not None else ''
