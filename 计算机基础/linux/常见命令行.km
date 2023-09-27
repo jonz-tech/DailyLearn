@@ -1,0 +1,401 @@
+{
+    "root": {
+        "data": {
+            "id": "cvtwrp3d1400",
+            "created": 1695839042464,
+            "text": "命令行"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cvtwsf2rny80",
+                    "created": 1695839099025,
+                    "text": "基本命令",
+                    "layout_mind_offset": {
+                        "x": -718,
+                        "y": 78
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwzxbdaaw0",
+                            "created": 1695839687276,
+                            "text": "ls: 列出当前目录中的文件和子目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx01j4nao0",
+                            "created": 1695839696452,
+                            "text": "cd: 更改当前工作目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx06fykmw0",
+                            "created": 1695839707145,
+                            "text": "pwd: 显示当前工作目录的路径"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx0aandl40",
+                            "created": 1695839715531,
+                            "text": "mkdir: 创建新的目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx0jmygk00",
+                            "created": 1695839735866,
+                            "text": "touch: 创建新文件或更新现有文件的时间戳"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx0oxvnj40",
+                            "created": 1695839747410,
+                            "text": "rm: 删除文件或目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx0u3kk8g0",
+                            "created": 1695839758638,
+                            "text": "cp: 复制文件或目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx10z80iw0",
+                            "created": 1695839773613,
+                            "text": "mv: 移动文件或目录，也可用于重命名文件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx167xpyw0",
+                            "created": 1695839785024,
+                            "text": "cat: 查看文件的内容"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx1bnty6w0",
+                            "created": 1695839796869,
+                            "text": "grep: 在文件中搜索文本"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtx1hkihy80",
+                            "created": 1695839809729,
+                            "text": "echo: 输出文本到终端"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwsiab2k00",
+                    "created": 1695839106011,
+                    "text": "文件和目录操作"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwyu2dkkw0",
+                            "created": 1695839601838,
+                            "text": "find： 在文件系统中查找文件和目录"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwyxa8db40",
+                            "created": 1695839608843,
+                            "text": "chmod： 修改文件和目录的权限"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwz3yadp40",
+                            "created": 1695839623358,
+                            "text": "chown： 更改文件和目录的所有者"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwzdbe9680",
+                            "created": 1695839643742,
+                            "text": "tar： 创建和提取压缩文件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwziif6lc0",
+                            "created": 1695839655051,
+                            "text": "zip/uzip: 压缩和解压缩文件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwzod60b40",
+                            "created": 1695839667794,
+                            "text": "ln: 创建链接"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwsokiubk0",
+                    "created": 1695839119689,
+                    "text": "系统信息"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwxt5uj0w0",
+                            "created": 1695839521507,
+                            "text": "top/htop: 显示系统资源使用情况和运行的进程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwy4urwkg0",
+                            "created": 1695839546960,
+                            "text": "free： 查看系统内存使用情况"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwydjwhug0",
+                            "created": 1695839565892,
+                            "text": "df： 显示磁盘空间使用情况"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwyk4xdfc0",
+                            "created": 1695839580224,
+                            "text": "uname： 显示系统信息"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwsu5e1r40",
+                    "created": 1695839131835,
+                    "text": "网络操作"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwwdvq4mo0",
+                            "created": 1695839409879,
+                            "text": "ping: 测试与另一台计算机的网络连接"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwwjunaqo0",
+                            "created": 1695839422874,
+                            "text": "ifconfig/ip: 查看和配置网络接口信息"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwwtmy10o0",
+                            "created": 1695839444176,
+                            "text": "ssh: 远程登录到其他计算机"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwx0nxwi00",
+                            "created": 1695839459474,
+                            "text": "scp: 安全复制文件到远程计算机"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwxaxl0i80",
+                            "created": 1695839481825,
+                            "text": "curl/wget: 下载文件或访问Web资源"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwsz6chuw0",
+                    "created": 1695839142777,
+                    "text": "进程管理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwvddi7ds0",
+                            "created": 1695839330413,
+                            "text": "ps：列出运行中的进程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwvlhoe340",
+                            "created": 1695839348079,
+                            "text": "kill：终止进程"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwvsfm6q80",
+                            "created": 1695839363192,
+                            "text": "`jobs`/`fg`/`bg`:管理后台任务"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwt1f4tso0",
+                    "created": 1695839147662,
+                    "text": "文本编辑",
+                    "layout_mind_offset": {
+                        "x": 497,
+                        "y": -254
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwv75jceg0",
+                            "created": 1695839316870,
+                            "text": "文本编辑器，用于编辑配置文件等",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwuv6buag0",
+                                    "created": 1695839290797,
+                                    "text": "nano"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwuxmlsu80",
+                                    "created": 1695839296135,
+                                    "text": "vim"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwv0kkrvs0",
+                                    "created": 1695839302542,
+                                    "text": "emacs"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwt5i72uw0",
+                    "created": 1695839156554,
+                    "text": "管道和重定向"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwtsxs6ds0",
+                            "created": 1695839207562,
+                            "text": "`|`(管道): 用于将命令的输出传递给另一个命令"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwtyonuyw0",
+                            "created": 1695839220072,
+                            "text": "`>`和`>>`（重定向)：用于将输出保存到文件中"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwt9kf0rk0",
+                    "created": 1695839165395,
+                    "text": "脚本编写和自动化"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwtpv5ii00",
+                            "created": 1695839200873,
+                            "text": "学会编写Shell脚本，以自动化常见任务"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtwtehhrbc0",
+                    "created": 1695839176103,
+                    "text": "帮助和手册"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwtj5sta80",
+                            "created": 1695839186279,
+                            "text": "使用man命令来查看命令的手册页，了解其用法和选项"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-soil",
+    "version": "1.4.43"
+}

@@ -1,0 +1,728 @@
+{
+    "root": {
+        "data": {
+            "id": "cvtw0v2lek00",
+            "created": 1695836939646,
+            "text": "全栈",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cvtw125nttk0",
+                    "created": 1695836955069,
+                    "text": "前端",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtw3e1h8m80",
+                            "created": 1695837137666,
+                            "text": "前端开发"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtw3klvmhc0",
+                                    "created": 1695837151960,
+                                    "text": "Html/CSS:理解HTML和CSS，能够创建和样式化网页",
+                                    "progress": 9
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtw3r09ci00",
+                                    "created": 1695837165890,
+                                    "text": "javaScript:掌握JavaScript编程语言，包括DOM操作、事件处理、异步编程等",
+                                    "progress": 6
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtw338snpc0",
+                            "created": 1695837114164,
+                            "text": "前端工具",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtw5tn6k800",
+                                    "created": 1695837328358,
+                                    "text": "掌握前端构建工具"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtw629hdeg0",
+                                            "created": 1695837347121,
+                                            "text": "webpack"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw63i6yow0",
+                                            "created": 1695837349824,
+                                            "text": "Babel"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtw67euwug0",
+                                    "created": 1695837358330,
+                                    "text": "了解前端性能优化和调试技巧"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtw3wxgoa00",
+                            "created": 1695837178782,
+                            "text": "前端框架:熟悉至少一种前端框架"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtw40nuvcw0",
+                                    "created": 1695837186908,
+                                    "text": "React"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtw43xmpyo0",
+                                    "created": 1695837194030,
+                                    "text": "Angular"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtw48uhpt40",
+                                    "created": 1695837204724,
+                                    "text": "Vue.js"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtw4e3fy8w0",
+                            "created": 1695837216149,
+                            "text": "响应式设计：了解响应式设计原则，使应用程序在不同设备和屏幕大小上都能正常运行。"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwbfzy1gg0",
+                            "created": 1695837768840,
+                            "text": "移动端"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwbjr5djc0",
+                                    "created": 1695837777015,
+                                    "text": "android"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtwbu0t4b40",
+                                            "created": 1695837799367,
+                                            "text": "java"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtwbxtvetc0",
+                                            "created": 1695837807655,
+                                            "text": "kotlint"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwbnt2eqw0",
+                                    "created": 1695837785838,
+                                    "text": "ios",
+                                    "progress": 9
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtwbwk3q740",
+                                            "created": 1695837804888,
+                                            "text": "objc"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtwc6n4xr40",
+                                            "created": 1695837826839,
+                                            "text": "swift"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwbq927ls0",
+                                    "created": 1695837791159,
+                                    "text": "跨平台"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtwc9hi0u80",
+                                            "created": 1695837833028,
+                                            "text": "flutter",
+                                            "progress": 6
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtwcc7ebeo0",
+                                            "created": 1695837838948,
+                                            "text": "reactNative"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtwcgpmlk00",
+                                            "created": 1695837848757,
+                                            "text": "uniapp"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwd09wii80",
+                                    "created": 1695837891342,
+                                    "text": "鸿蒙HMS"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw1ygwgpk0",
+                    "created": 1695837025406,
+                    "text": "后端"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtw7h4y8ds0",
+                            "created": 1695837457863,
+                            "text": "后端开发"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtw7rhdpe80",
+                                    "created": 1695837480382,
+                                    "text": "精通一种或多种后端开发语言",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtw7zc51i80",
+                                            "created": 1695837497480,
+                                            "text": "Node.js"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw80i12340",
+                                            "created": 1695837500013,
+                                            "text": "Python",
+                                            "progress": 9
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw80n092g0",
+                                            "created": 1695837500314,
+                                            "text": "Ruby"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw8161h1k0",
+                                            "created": 1695837501464,
+                                            "text": "Java"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw8cwpooo0",
+                                            "created": 1695837527022,
+                                            "text": "PHP",
+                                            "progress": 6
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtw8u3hh1k0",
+                                    "created": 1695837564437,
+                                    "text": "后端框架"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtw965z3ag0",
+                                            "created": 1695837590709,
+                                            "text": "Express.js/Node.js"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw9d2imk00",
+                                            "created": 1695837605737,
+                                            "text": "Django/python",
+                                            "progress": 9
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtw9ihsee80",
+                                            "created": 1695837617544,
+                                            "text": "Ruby on Rails/Ruby"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwa7szic80",
+                                    "created": 1695837672641,
+                                    "text": "API设计：能够设计和开发"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cvtwajb3e7s0",
+                                            "created": 1695837697680,
+                                            "text": "RESTful api"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cvtwaoptmiw0",
+                                            "created": 1695837709455,
+                                            "text": "GraphQL API"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw23m16qw0",
+                    "created": 1695837036600,
+                    "text": "数据库"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwdzic67c0",
+                            "created": 1695837968039,
+                            "text": "SQL数据库"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwee6v9xk0",
+                                    "created": 1695837999998,
+                                    "text": "mysql",
+                                    "progress": 9
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwei8in340",
+                                    "created": 1695838008804,
+                                    "text": "postgresql"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwenv12u80",
+                                    "created": 1695838021050,
+                                    "text": "sqlite3",
+                                    "progress": 9
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwe81wjk80",
+                            "created": 1695837986637,
+                            "text": "NoSQL数据库"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwevf1j7c0",
+                                    "created": 1695838037497,
+                                    "text": "MongoDB"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtweycys7k0",
+                                    "created": 1695838043902,
+                                    "text": "Redis"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwic3bbqg0",
+                            "created": 1695838308886,
+                            "text": "向量数据库：AI方向"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw29i4tsw0",
+                    "created": 1695837049425,
+                    "text": "项目规划"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwf98defs0",
+                            "created": 1695838067569,
+                            "text": "代码管理",
+                            "progress": 9
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwfcyzoo00",
+                                    "created": 1695838075709,
+                                    "text": "git"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwffzq6ds0",
+                                    "created": 1695838082284,
+                                    "text": "versions"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwfmz0rk00",
+                            "created": 1695838097478,
+                            "text": "PMP管理",
+                            "progress": 9
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwg9y3i800",
+                                    "created": 1695838147488,
+                                    "text": "规划"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwggw0q5c0",
+                                    "created": 1695838162600,
+                                    "text": "执行"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwgj97w7s0",
+                                    "created": 1695838167753,
+                                    "text": "交付"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwhiudct40",
+                            "created": 1695838245218,
+                            "text": "协作：能够与设计师、产品经理和其他开发者协同工作",
+                            "progress": 6
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwhpehfso0",
+                                    "created": 1695838259495,
+                                    "text": "沟通能力"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwhw631go0",
+                                    "created": 1695838274225,
+                                    "text": "团队协作"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw2ej42vc0",
+                    "created": 1695837060368,
+                    "text": "安全和测试"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwj24gj6g0",
+                            "created": 1695838365551,
+                            "text": "了解常见的Web安全问题，并学会如何防范这些问题"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwj52d7a80",
+                                    "created": 1695838371955,
+                                    "text": "XSS"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwj6ep7ls0",
+                                    "created": 1695838374878,
+                                    "text": "SQL"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwmu78xv40",
+                            "created": 1695838661762,
+                            "text": "编写单元测试和集成测试，确保应用程序的质量和安全性"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw2haep6o0",
+                    "created": 1695837066372,
+                    "text": "部署和服务器管理"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwl9pu9yo0",
+                            "created": 1695838538810,
+                            "text": "学习如何将应用程序部署到服务器上",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwkzwgvf40",
+                                    "created": 1695838517443,
+                                    "text": "云服务器",
+                                    "progress": 6
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwl5ncn8w0",
+                                    "created": 1695838529952,
+                                    "text": "虚拟主机"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwlq5a1y00",
+                            "created": 1695838574572,
+                            "text": "服务器配置"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwm6dc6ao0",
+                                    "created": 1695838609888,
+                                    "text": "内存缓存"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwomyb3x40",
+                                    "created": 1695838802713,
+                                    "text": "nginx"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwoxmb0cw0",
+                                    "created": 1695838825932,
+                                    "text": "cdn"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwlur3n9s0",
+                            "created": 1695838584599,
+                            "text": "域名",
+                            "progress": 9
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwlzmu9600",
+                                    "created": 1695838595225,
+                                    "text": "备案"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwm2b4hqo0",
+                                    "created": 1695838601047,
+                                    "text": "SSL"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvtw2nzs4wo0",
+                    "created": 1695837080967,
+                    "text": "操作系统和命令行"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvtwn9y4q4o0",
+                            "created": 1695838696040,
+                            "text": "系统"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvtwngo2azk0",
+                                    "created": 1695838710668,
+                                    "text": "linux"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwnjmtv2g0",
+                                    "created": 1695838717124,
+                                    "text": "centos",
+                                    "progress": 6
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cvtwnn1c9f40",
+                                    "created": 1695838724532,
+                                    "text": "macos",
+                                    "progress": 7
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvtwnposvfs0",
+                            "created": 1695838730304,
+                            "text": "命令行: 见./linux/常见命令行.km"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fish",
+    "version": "1.4.43"
+}
