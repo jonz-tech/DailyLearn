@@ -1,0 +1,619 @@
+{
+    "root": {
+        "data": {
+            "id": "cwlubieg9800",
+            "created": 1698675810638,
+            "text": "图片",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cwlvl27a4o80",
+                    "created": 1698679380127,
+                    "text": "像素处理",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlvl8ih5u00",
+                            "created": 1698679393865,
+                            "text": "图像增强"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvr0l4rso0",
+                                    "created": 1698679846796,
+                                    "text": "亮度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvr6yy2o00",
+                                    "created": 1698679860692,
+                                    "text": "对比度"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvrb04hg80",
+                                    "created": 1698679869470,
+                                    "text": "清晰度"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvlcqij1c0",
+                            "created": 1698679403058,
+                            "text": "图像滤波",
+                            "note": "了解如何使用像素滤波器来模糊、锐化或改变图像的特征"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvrnxjrfk0",
+                                    "created": 1698679897613,
+                                    "text": "模糊"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvrrgu7q80",
+                                    "created": 1698679905310,
+                                    "text": "锐化"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvrx6rhnc0",
+                                    "created": 1698679917761,
+                                    "text": "改变图像特征"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwlvhk14ywo0",
+                    "created": 1698679105481,
+                    "text": "像素和分辨率",
+                    "expandState": "expand",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlv222p2lc0",
+                            "created": 1698677890931,
+                            "text": "图像尺寸（Size）和像素总量： 图片在长、宽上的像素数量。一个图像的总像素数量等于宽度像素数乘以高度像素数",
+                            "note": "Size 表示图像的实际尺寸，通常以英寸、毫米或其他物理单位来表示。\n图像的尺寸是在物理世界中的实际尺寸，与 PPI 和 DPI 一起用于确定图像在打印或显示时的最终物理尺寸。\n图像的 Size 由图像的像素数（宽度和高度）以及 PPI 或 DPI 决定。Size = 像素数 / PPI 或 Size = 像素数 / (DPI / 25.4)（将 DPI 转换为每英寸的毫米数）",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvgevalko0",
+                            "created": 1698679015880,
+                            "text": "像素分辨率（Resolution）",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlv29ipfv40",
+                                    "created": 1698677907136,
+                                    "text": "像素/英寸(PPI)",
+                                    "note": "PPI（Pixels Per Inch）：\n\nPPI 是一个用于描述数字图像或屏幕分辨率的术语。它表示每英寸内包含的像素数量，用于度量图像的清晰度和细节。\nPPI 通常用于计算机屏幕、电视屏幕和数字照片等数字媒体。\n更高的 PPI 表示图像更清晰，因为有更多的像素来表示图像的细节。\n通常在屏幕分辨率、图像分辨率和图像显示时使用 PPI。",
+                                    "layout": null
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlv2j3bmyo0",
+                                    "created": 1698677927974,
+                                    "text": "点/英寸DPI",
+                                    "note": "DPI（Dots Per Inch）：\n\nDPI 是一个用于描述打印品质的术语。它表示每英寸内的打印点数量，用于度量打印品质和精细度。\nDPI 通常用于打印机、扫描仪和印刷品等印刷媒体。\n更高的 DPI 表示打印品质更高，因为有更多的打印点用于呈现图像和文本。\n通常在打印品质、印刷设备和打印媒体时使用 DPI。",
+                                    "layout": null
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvybhmo540",
+                            "created": 1698680419078,
+                            "text": "纵横比Aspect Ratio"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvyne5d9s0",
+                                    "created": 1698680444989,
+                                    "text": "图像的纵横比是指图像的宽度与高度之间的比例关系。它可以是1:1（正方形）、4:3、16:9等不同比例。改变图像的宽度或高度将影响纵横比"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvyw1xteo0",
+                            "created": 1698680463842,
+                            "text": "像素大小"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvz3qsvo80",
+                                    "created": 1698680480583,
+                                    "text": "图像的实际显示大小与分辨率和设备有关。在计算机屏幕上，通常以像素为单位显示图像。在打印时，分辨率和总像素数量将决定图像在纸上的物理尺寸"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwlvhej9s6w0",
+                    "created": 1698679093517,
+                    "text": "像素基础概念",
+                    "layout": null,
+                    "note": "像素（Pixel）是数字图像处理中的基本单位，是\"picture element\"的缩写。它是数字图像中最小的可操作元素，代表图像上的一个离散的点或格子。每个像素包含有关该点的信息，通常包括颜色、亮度和位置",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlukx0llns0",
+                            "created": 1698676547729,
+                            "text": "像素亮度和灰度",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvsx2fqds0",
+                                    "created": 1698679995864,
+                                    "text": "亮度",
+                                    "note": "在彩色图像中，像素包含颜色和亮度信息\n\n\n理解像素的亮度是什么，它是如何计算的，以及在彩色图像和灰度图像中的不同"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvt1yxa0w0",
+                                    "created": 1698680006535,
+                                    "text": "灰度",
+                                    "note": "在灰度图像中，像素只包含灰度值\n\n学习如何将彩色图像转换为灰度图像，其中像素的亮度代表灰度级别"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlul13kbkg0",
+                            "created": 1698676556616,
+                            "text": "位置:每个像素都有一个特定的位置，通常以行和列的坐标表示",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvj6uyft40",
+                            "created": 1698679233539,
+                            "text": "颜色空间",
+                            "expandState": "expand",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwluksd5zfk0",
+                                    "created": 1698676537605,
+                                    "text": "颜色",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlul66wi000",
+                                            "created": 1698676567702,
+                                            "text": "RGB/RGBA",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwlulg4bzwo0",
+                                            "created": 1698676589314,
+                                            "text": "HSV",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwluloxbagg0",
+                                            "created": 1698676608481,
+                                            "text": "CMYK",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlv3fes2h40",
+                                    "created": 1698677998324,
+                                    "text": "像素深度Pixel Depth",
+                                    "layout": null,
+                                    "note": "像素深度是指图像中每个像素用多少位来表示颜色或灰度级别。它决定了图像可以包含多少不同的颜色或灰度值。\n像素深度通常用于描述图像的颜色深度。例如，一个24位像素深度的图像可以表示约1670万种不同的颜色。\n像素深度是指每个像素的信息，它可以是灰度深度（在灰度图像中表示不同灰度级别）或彩色深度（在彩色图像中表示不同颜色通道的级别）。",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlv3mplcvc0",
+                                            "created": 1698678014215,
+                                            "text": "1位",
+                                            "note": "二进制，即黑白图像",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwlv40tslf40",
+                                            "created": 1698678044945,
+                                            "text": "8位",
+                                            "note": "256级灰度",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwlwqy8ztyo0",
+                                            "created": 1698682662819,
+                                            "text": "16位",
+                                            "expandState": "expand",
+                                            "note": "高彩色，亦称为“16位”"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cwlv45qvzc80",
+                                            "created": 1698678055652,
+                                            "text": "24位",
+                                            "note": "真彩色，约1670万色",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlwk8vacrk0",
+                                    "created": 1698682137385,
+                                    "text": "Bits Per Pixel",
+                                    "note": "BPP 是一个表示每个像素所需的位数的度量。它告诉你每个像素的颜色信息占用多少位。\nBPP 是一个与图像文件大小和存储相关的度量。它可以用于估计图像文件的大小，因为它告诉你每个像素需要多少位来存储。\nBPP 的值通常与像素深度相对应，但也可以包括其他信息，如透明度通道或其他元数据。"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlwphmvlv40",
+                                            "created": 1698682548289,
+                                            "text": "存储像素深度所需的位数"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwlvngey8b40",
+                    "created": 1698679567794,
+                    "text": "实践和项目"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlvpuzmxts0",
+                            "created": 1698679756248,
+                            "text": "练习项目"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvq1ljsjs0",
+                                    "created": 1698679770634,
+                                    "text": "编辑、滤镜应用或简单的图像增强"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvq71agtk0",
+                            "created": 1698679782470,
+                            "text": "创建图像"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvqf1lx400",
+                                    "created": 1698679799903,
+                                    "text": "尝试创建自己的图像，了解像素如何组成图像并影响其外观"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwlvo2a7wgg0",
+                    "created": 1698679615397,
+                    "text": "深入学习"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwlvoae8mrc0",
+                            "created": 1698679633055,
+                            "text": "高级概念",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvohgs4k80",
+                                    "created": 1698679648446,
+                                    "text": "形态学操作"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw3dy4nf40",
+                                            "created": 1698680816250,
+                                            "text": "这包括腐蚀、膨胀、开运算和闭运算等操作，用于改变图像的形状和结构"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvol72p540",
+                                    "created": 1698679656566,
+                                    "text": "图像分割"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw35mbtpc0",
+                                            "created": 1698680798122,
+                                            "text": "分割是将图像分成不同的区域或对象的过程，用于目标识别和分析。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvoph8ka00",
+                                    "created": 1698679665888,
+                                    "text": "特征提取"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw31aeef40",
+                                            "created": 1698680788694,
+                                            "text": "特征提取是识别和描述图像中有趣特征的过程，如角点、边缘、纹理等"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw24jug1k0",
+                                    "created": 1698680717431,
+                                    "text": "边缘检测"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw2rg3mqo0",
+                                            "created": 1698680767271,
+                                            "text": "边缘检测是找出图像中物体边缘的过程，常用于物体识别和分割"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw29xjgww0",
+                                    "created": 1698680729143,
+                                    "text": "二值化"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw2n6l5jk0",
+                                            "created": 1698680757988,
+                                            "text": "二值化是将图像转换为只有两种颜色（通常是黑和白）的过程，用于分割图像中的对象和背景"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw2dr458g0",
+                                    "created": 1698680737462,
+                                    "text": "直方图"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw2ijnc0w0",
+                                            "created": 1698680747894,
+                                            "text": "直方图是一种图像分布的统计工具，它可以帮助你理解图像的亮度和颜色分布情况"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw12stgpc0",
+                                    "created": 1698680635256,
+                                    "text": "图像压缩"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw3roec7k0",
+                                            "created": 1698680846137,
+                                            "text": "图像压缩技术可以减小图像文件的大小，而尽量保持图像质量。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw417188o0",
+                                    "created": 1698680866855,
+                                    "text": "颜色空间转换"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw458vbn40",
+                                            "created": 1698680875673,
+                                            "text": "将图像从一个色彩空间转换到另一个，以便执行不同的操作。"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw4gj7w280",
+                                    "created": 1698680900243,
+                                    "text": "图像复原"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw4kdjwoo0",
+                                            "created": 1698680908608,
+                                            "text": "图像复原涉及修复受损的图像，例如去除噪声或修复模糊"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlw4sg4g7k0",
+                                    "created": 1698680926177,
+                                    "text": "缩放和旋转"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cwlw4x276ao0",
+                                            "created": 1698680936219,
+                                            "text": "缩放或旋转以适应不同的显示或分析需求"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cwlvox8uiso0",
+                            "created": 1698679682795,
+                            "text": "图像处理工具",
+                            "note": "掌握图像处理软件或编程语言"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cwlvp1rlug00",
+                                    "created": 1698679692636,
+                                    "text": "PS"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvpegqyq80",
+                                    "created": 1698679720278,
+                                    "text": "GIMP"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cwlvpjcsjnk0",
+                                    "created": 1698679730922,
+                                    "text": "OpenCV"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cwlw5dzn53k0",
+                    "created": 1698680973070,
+                    "text": "图像算法"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
