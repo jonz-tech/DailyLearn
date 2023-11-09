@@ -1,0 +1,33 @@
+{
+    "root": {
+        "data": {
+            "id": "cwt7xkfn0eo0",
+            "created": 1699425133200,
+            "text": "AI"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cwt7xo1m8mw0",
+                    "created": 1699425141059,
+                    "text": "模型"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cwt7xt8ctmo0",
+                            "created": 1699425152351,
+                            "text": "《Practical Deep Learning for Coders》",
+                            "hyperlink": "https://course.fast.ai/",
+                            "hyperlinkTitle": ""
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
