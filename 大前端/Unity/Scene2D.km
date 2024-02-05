@@ -1,0 +1,134 @@
+{
+    "root": {
+        "data": {
+            "id": "cywepra8xeo0",
+            "created": 1707061265718,
+            "text": "创建一个unity项目"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cywgo6nc7hs0",
+                    "created": 1707066784653,
+                    "text": "制作过程",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywflju1pc00",
+                            "created": 1707063757154,
+                            "text": "1. 预制作"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywflro75000",
+                            "created": 1707063774215,
+                            "text": "2. 生产"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywflvut7fc0",
+                            "created": 1707063783322,
+                            "text": "3. 后期制作"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywfm1nzu140",
+                            "created": 1707063795970,
+                            "text": "4. 运营"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cywgofq9usg0",
+                    "created": 1707066804421,
+                    "text": "指定一个目标"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywgomhjsls0",
+                            "created": 1707066819131,
+                            "text": "30/60/90天开发一个项目"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywgoyqcq740",
+                            "created": 1707066845785,
+                            "text": "实现步骤"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cywgpaanb3k0",
+                                    "created": 1707066870956,
+                                    "text": "1. 学会unity"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cywgpqpaf2g0",
+                                            "created": 1707066906670,
+                                            "text": "4周计划/每周4小时/搞懂unity"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cywgq8q4wb40",
+                                                    "created": 1707066945904,
+                                                    "text": "可以写2个小demo"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cywgphp6sy00",
+                                    "created": 1707066887073,
+                                    "text": "2. 完成项目开发"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cywgqnb4dyw0",
+                                            "created": 1707066977648,
+                                            "text": "8周计划/每天2小时/需求开发"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cywgr5fslu80",
+                                                    "created": 1707067017112,
+                                                    "text": "发布项目"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

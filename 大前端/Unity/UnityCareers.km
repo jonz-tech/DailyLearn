@@ -1,0 +1,338 @@
+{
+    "root": {
+        "data": {
+            "id": "cywefeemjx40",
+            "created": 1707060454043,
+            "text": "unityGeneralist"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cywefrg6t1k0",
+                    "created": 1707060482435,
+                    "text": "Art&Desigin"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywejtdz4x40",
+                            "created": 1707060800112,
+                            "text": "skill of artist and design",
+                            "expandState": "expand",
+                            "layout_right_offset": {
+                                "x": -15.999999745686864,
+                                "y": -168.99999731381763
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cywek1rjsvk0",
+                                    "created": 1707060818347,
+                                    "text": "Research and analysis"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywek8mnya00",
+                                    "created": 1707060833289,
+                                    "text": "Collaboration"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywekc8d1rk0",
+                                    "created": 1707060841131,
+                                    "text": "Communication"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cywelqda6600",
+                            "created": 1707060950268,
+                            "text": "role",
+                            "layout_right_offset": {
+                                "x": 12.999999793370648,
+                                "y": -172.9999972502393
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cywehaeq2e80",
+                                    "created": 1707060602070,
+                                    "text": "artist"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cywehf4722w0",
+                                            "created": 1707060612317,
+                                            "text": "3D artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cywehrar67s0",
+                                            "created": 1707060638835,
+                                            "text": "2D artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cywehx5g3og0",
+                                            "created": 1707060651575,
+                                            "text": "Lighting Artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cyweictmd280",
+                                            "created": 1707060685688,
+                                            "text": "Character artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cyweigva8kw0",
+                                            "created": 1707060694496,
+                                            "text": "Technical artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cyweipmtv9s0",
+                                            "created": 1707060713576,
+                                            "text": "Visual Effects artist"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cyweit5h0dc0",
+                                            "created": 1707060721233,
+                                            "text": "Animator"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cywehjcodeg0",
+                                    "created": 1707060621537,
+                                    "text": "designer"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cywei1qfe8w0",
+                                            "created": 1707060661551,
+                                            "text": "Audio Designer"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cywei6gy7jk0",
+                                            "created": 1707060671862,
+                                            "text": "Game / Level Designer"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cyweg4acvag0",
+                    "created": 1707060510381,
+                    "text": "Programming"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywekl4brm80",
+                            "created": 1707060860478,
+                            "text": "role"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cyweknr9byo0",
+                                    "created": 1707060866218,
+                                    "text": "Quality assurance technician"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywektsaxj40",
+                                    "created": 1707060879342,
+                                    "text": "Programmer analyst"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cyweky4924o0",
+                                    "created": 1707060888772,
+                                    "text": "C# developer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywel143g480",
+                                    "created": 1707060895293,
+                                    "text": "Unity engineer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywel5b9r1k0",
+                                    "created": 1707060904434,
+                                    "text": "Research engineer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywel9lf9e80",
+                                    "created": 1707060913755,
+                                    "text": "Software developer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywelck9c7c0",
+                                    "created": 1707060920215,
+                                    "text": "VR / AR developer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywelfqenxc0",
+                                    "created": 1707060927117,
+                                    "text": "Mobile developer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cyweljo60yg0",
+                                    "created": 1707060935689,
+                                    "text": "UI / interface programmer"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywelo9p3k80",
+                                    "created": 1707060945698,
+                                    "text": "Gameplay programmer"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cywem6b356o0",
+                            "created": 1707060984964,
+                            "text": "skill"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cywembue0ps0",
+                                    "created": 1707060997015,
+                                    "text": "Critical thinking and problem solving"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywemgbkjoo0",
+                                    "created": 1707061006761,
+                                    "text": "Communication"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywemj5e4ow0",
+                                    "created": 1707061012917,
+                                    "text": "Collaboration"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cywegbpnxqw0",
+                    "created": 1707060526544,
+                    "text": "projectManagement"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywen1ztr8g0",
+                            "created": 1707061053940,
+                            "text": "skill"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cywen3kkuds0",
+                                    "created": 1707061057371,
+                                    "text": "Project management"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywen8q8kuo0",
+                                    "created": 1707061068598,
+                                    "text": "Research and Analysis"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cywenfjqvio0",
+                                    "created": 1707061083442,
+                                    "text": "Critical thinking and problem solving"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
