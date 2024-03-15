@@ -3,7 +3,7 @@
         "data": {
             "id": "cywepra8xeo0",
             "created": 1707061265718,
-            "text": "创建一个unity项目"
+            "text": "unityProject"
         },
         "children": [
             {
@@ -81,7 +81,8 @@
                                         "data": {
                                             "id": "cywgpqpaf2g0",
                                             "created": 1707066906670,
-                                            "text": "4周计划/每周4小时/搞懂unity"
+                                            "text": "4周计划/每周4小时/搞懂unity",
+                                            "note": "20240219-lession1_DriveVehicle \n1. 创建3d项目\n2. import package材料\n3. 在vehicles目录把小车拖到hierarchy\n4. 操作小车：选中小车\n鼠标右键+aswd： 左右前后移动\n键盘F键：聚焦到小车上\n鼠标滚轮：放大缩小场景\noption+鼠标左键：拖动观看场景\noption+鼠标右键：镜头放大缩小\ncmd+z：撤销操作\n5. 添加障碍物\n在obstacle目录中，将障碍物拖到hierarchy。\n6. 查看相机预览视图与play\n7. 将相机拖到小车后面，并调整俯视角度\n8. 调整unity布局\n9. 给小车和障碍物添加刚体\n10. 障碍物masked调大\n11. 给小车添加Time speed\n12. 相机添加跟随小车的脚本\n13. 修正相机抖动问题：lateUpdate()"
                                         },
                                         "children": [
                                             {
@@ -117,6 +118,108 @@
                                                     "text": "发布项目"
                                                 },
                                                 "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cywh192cee80",
+                    "created": 1707067808648,
+                    "text": "community"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cywh1n3zv400",
+                            "created": 1707067839223,
+                            "text": "YouTube"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywh5wdbla80",
+                            "created": 1707068172834,
+                            "text": "Unity Discord"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywh69dhk140",
+                            "created": 1707068201142,
+                            "text": "Reddit"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywh6cbz7l40",
+                            "created": 1707068207581,
+                            "text": "Stack Overflow"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cywh6k5dc000",
+                            "created": 1707068224596,
+                            "text": "Twitch"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "czcocfxha480",
+                    "created": 1708713392673,
+                    "text": "项目控制"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "czcocmim8xs0",
+                            "created": 1708713407012,
+                            "text": "需求文档"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "czcocv62nnc0",
+                                    "created": 1708713425844,
+                                    "text": "设计文档"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "czcodau8qxs0",
+                                            "created": 1708713459957,
+                                            "text": "项目时间表"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "czcodit43fs0",
+                                                    "created": 1708713477303,
+                                                    "text": "项目里程碑和积压工作"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "czcoedjkiqo0",
+                                                            "created": 1708713544207,
+                                                            "text": "最小可行产品"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
