@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "${workspaceFolder}/venv/langchain/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+     "python.analysis.extraPaths": "${workspaceFolder}/venv/langchain/lib/python3.10/site-packages"
+  }
